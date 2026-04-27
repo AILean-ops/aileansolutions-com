@@ -1,0 +1,14 @@
+---
+interface Props {
+  direction: 'up' | 'down' | 'neutral';
+  value: string;
+  label?: string;
+}
+const { direction, value, label } = Astro.props;
+const arrow = direction === 'up' ? '↑' : direction === 'down' ? '↓' : '→';
+---
+
+<span class={`delta delta-${direction}`} aria-label={label ?? `${arrow} ${value}`}>
+  <span aria-hidden="true">{arrow}</span>
+  <span>{value}</span>
+</span>

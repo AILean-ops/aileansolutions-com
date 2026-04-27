@@ -1,0 +1,62 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-white/5 mt-32 pb-10 pt-16 bg-ink-900">
+  <div class="container-site">
+    <div class="grid gap-10 md:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/brand/logo.png" alt="AI Lean Solutions, LLC" class="w-10 h-10 object-contain" />
+          <span class="font-display font-bold tracking-tight text-[17px] text-white">
+            AI Lean Solutions, LLC
+          </span>
+        </div>
+        <p class="text-text-muted text-[14px] max-w-xs leading-relaxed">
+          Weekly competitive intelligence for local service businesses.
+          Written in plain language by people who&rsquo;ve actually run a business.
+        </p>
+        <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brand-cyan/30 bg-brand-cyan/5">
+          <span class="inline-block w-2 h-2 rounded-full bg-signal-up animate-pulse-slow"></span>
+          <span class="font-mono text-[11px] uppercase tracking-label text-white font-semibold">
+            Phoenix Med Spas · Launching Summer 2026
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label mb-3">Product</p>
+        <ul class="space-y-2 text-[14px] text-text-muted">
+          <li><a href="/product" class="hover:text-white transition-colors">How it works</a></li>
+          <li><a href="/sample-report/radiance-aesthetics.html" target="_blank" rel="noopener" class="hover:text-white transition-colors">Sample report</a></li>
+          <li><a href="/signup" class="hover:text-white transition-colors">Waitlist</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="section-label mb-3">Company</p>
+        <ul class="space-y-2 text-[14px] text-text-muted">
+          <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+          <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="section-label mb-3">Legal</p>
+        <ul class="space-y-2 text-[14px] text-text-muted">
+          <li><a href="/legal/privacy" class="hover:text-white transition-colors">Privacy</a></li>
+          <li><a href="/legal/terms" class="hover:text-white transition-colors">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline-strong mt-12 pt-6 flex flex-col md:flex-row justify-between gap-3 text-[12px] text-text-dim">
+      <p>© {year} AI Lean Solutions LLC. All rights reserved.</p>
+      <p class="font-mono">
+        <a href="mailto:Brian.Bricker@AILeansolutions.com" class="hover:text-white transition-colors">
+          Brian.Bricker@AILeansolutions.com
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

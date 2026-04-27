@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg-mark" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+  </defs>
+  <!-- Left organic hemisphere -->
+  <path d="M23 8c-7 0-12 5-12 12v8c0 7 5 12 12 12V8z" stroke="url(#lg-mark)" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+  <path d="M15 18c2-1 3-1 4 0M15 24c2-1 4-1 5 0M15 30c2-1 3-1 4 0M15 36c2-1 3-1 4 0" stroke="url(#lg-mark)" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+  <!-- Right circuit hemisphere -->
+  <path d="M25 8c7 0 12 5 12 12v8c0 7-5 12-12 12V8z" stroke="url(#lg-mark)" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+  <g stroke="url(#lg-mark)" stroke-width="1.2" stroke-linecap="round">
+    <path d="M29 16h4M29 22h6M29 28h5M29 34h6M29 40h4"/>
+    <circle cx="35" cy="16" r="1.1" fill="url(#lg-mark)"/>
+    <circle cx="37" cy="22" r="1.1" fill="url(#lg-mark)"/>
+    <circle cx="36" cy="28" r="1.1" fill="url(#lg-mark)"/>
+    <circle cx="37" cy="34" r="1.1" fill="url(#lg-mark)"/>
+    <circle cx="35" cy="40" r="1.1" fill="url(#lg-mark)"/>
+  </g>
+  <!-- Central divider -->
+  <line x1="24" y1="6" x2="24" y2="42" stroke="url(#lg-mark)" stroke-width="0.8" opacity="0.45"/>
+</svg>

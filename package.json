@@ -1,0 +1,23 @@
+{
+  "name": "aileansolutions-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Marketing site for AI Lean Solutions LLC — competitive intelligence for local service businesses.",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.7",
+    "tailwindcss": "^3.4.14"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+---
+interface Props {
+  id?: string;
+  num?: string;
+  eyebrow?: string;
+  className?: string;
+  light?: boolean;
+}
+const { id, num, eyebrow, className = '', light = false } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={[
+    'relative py-24 md:py-32',
+    light ? 'bg-paper-100 text-text-dark' : '',
+    className,
+  ]}
+>
+  <div class="container-site relative">
+    {(num || eyebrow) && (
+      <div class="flex items-center gap-3 mb-8">
+        {num && (
+          <span class:list={['font-mono text-[11px] tracking-label', light ? 'text-text-dark/60' : 'text-text-muted']}>
+            // {num}
+          </span>
+        )}
+        {eyebrow && (
+          <span class:list={['section-label', light ? '!text-text-dark/60' : '']}>
+            {eyebrow}
+          </span>
+        )}
+      </div>
+    )}
+    <slot />
+  </div>
+</section>
