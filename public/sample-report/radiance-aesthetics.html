@@ -3,31 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radiance Aesthetics · Weekly Intelligence · April 13–19, 2026</title>
+<title>Radiance Aesthetics - Weekly Intelligence - May 10-16, 2026</title>
 <style>
-  /* Reset */
   body, table, td, p, a, li { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
   body { margin: 0; padding: 0; background: #F3EEEA; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #2C2624; }
   table { border-collapse: collapse; }
   img { display: block; border: 0; outline: none; text-decoration: none; }
 
-  /* Container */
   .wrap { width: 100%; background: #F3EEEA; padding: 24px 0; }
   .container { max-width: 640px; margin: 0 auto; background: #FAF5F1; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 24px rgba(62, 42, 60, 0.08); }
 
-  /* Header */
   .header { background: #3E2A3C; padding: 28px 32px; color: #FAF5F1; }
   .header .brand { font-family: Georgia, "Times New Roman", serif; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: #C48B7A; margin: 0 0 8px 0; }
   .header h1 { font-family: Georgia, "Times New Roman", serif; font-size: 26px; font-weight: normal; margin: 0 0 6px 0; color: #FAF5F1; line-height: 1.25; }
   .header .subtitle { font-size: 13px; color: #D9BFC5; margin: 0; letter-spacing: 0.3px; }
 
-  /* Section */
   .section { padding: 28px 32px; border-bottom: 1px solid #ECE2DB; }
   .section:last-child { border-bottom: none; }
   .section-num { display: inline-block; width: 26px; height: 26px; line-height: 26px; text-align: center; background: #C48B7A; color: #FAF5F1; border-radius: 50%; font-size: 13px; font-weight: 600; margin-right: 10px; vertical-align: middle; }
   .section h2 { font-family: Georgia, "Times New Roman", serif; font-size: 20px; font-weight: normal; color: #3E2A3C; margin: 0 0 18px 0; display: inline-block; vertical-align: middle; }
 
-  /* From Brian */
   .from-brian { background: #F7ECE4; padding: 26px 32px; border-left: 4px solid #C48B7A; }
   .from-brian .label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B6B7A; margin: 0 0 10px 0; font-weight: 600; }
   .from-brian p { margin: 0 0 14px 0; font-size: 15px; line-height: 1.65; color: #2C2624; }
@@ -35,26 +30,30 @@
   .from-brian .signoff { font-family: Georgia, serif; font-style: italic; color: #6B4D5C; font-size: 14px; margin-top: 18px; }
   .from-brian strong.bottomline { background: #F3D8CB; padding: 2px 4px; border-radius: 2px; }
 
-  /* Scorecard */
+  .competitive-read { background: #FFFFFF; border: 1px solid #E6D8D0; border-radius: 8px; padding: 18px 20px; margin: 0; }
+  .competitive-read .label { font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #8B6B7A; font-weight: 700; margin: 0 0 12px 0; }
+  .read-row { padding: 10px 0; border-bottom: 1px dashed #ECE2DB; }
+  .read-row:last-child { border-bottom: none; }
+  .read-key { display: block; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: #8B6B7A; font-weight: 700; margin-bottom: 4px; }
+  .read-value { display: block; font-size: 14px; line-height: 1.55; color: #2C2624; }
+
   .scorecard { background: #FFFFFF; border-radius: 8px; overflow: hidden; border: 1px solid #ECE2DB; }
   .scorecard-row { display: block; padding: 14px 18px; border-bottom: 1px solid #F3EEEA; }
   .scorecard-row:last-child { border-bottom: none; }
   .scorecard-metric { font-size: 13px; color: #6B4D5C; margin-bottom: 6px; }
   .scorecard-bar { display: block; height: 8px; background: #F3EEEA; border-radius: 4px; overflow: hidden; margin: 6px 0; }
   .scorecard-bar-fill { display: block; height: 8px; background: linear-gradient(90deg, #C48B7A, #D9A895); border-radius: 4px; }
-  .scorecard-values { font-size: 13px; color: #2C2624; display: flex; justify-content: space-between; }
+  .scorecard-values { font-size: 13px; color: #2C2624; display: flex; justify-content: space-between; gap: 12px; }
   .scorecard-values .you { font-weight: 600; color: #3E2A3C; }
-  .scorecard-values .peer { color: #8B6B7A; }
+  .scorecard-values .peer { color: #8B6B7A; text-align: right; }
   .rank-1 { background: #E8F3E8; color: #2D5F2D; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
   .rank-2 { background: #FDF4E3; color: #8A6914; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
   .rank-3 { background: #FBEDED; color: #8C3535; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
 
-  /* Trend summary */
   .trend { background: #F7ECE4; border-radius: 8px; padding: 16px 18px; margin-top: 14px; font-size: 14px; line-height: 1.6; color: #3E2A3C; }
   .trend .up { color: #2D5F2D; font-weight: 600; }
-  .trend .down-good { color: #2D5F2D; font-weight: 600; }
+  .trend .watch { color: #8A6914; font-weight: 600; }
 
-  /* What changed */
   .changed-group { margin-bottom: 18px; }
   .changed-group h3 { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #8B6B7A; margin: 0 0 10px 0; font-weight: 600; }
   .changed-item { padding: 10px 0; border-bottom: 1px dashed #ECE2DB; font-size: 14px; line-height: 1.55; color: #2C2624; }
@@ -64,13 +63,16 @@
   .tag-watch { background: #FDF4E3; color: #8A6914; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-right: 6px; }
   .tag-good { background: #E8F3E8; color: #2D5F2D; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-right: 6px; }
 
-  /* Moves */
   .move { background: #FFFFFF; border-radius: 10px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid #ECE2DB; }
   .move:last-child { margin-bottom: 0; }
   .move-header { display: block; margin-bottom: 14px; }
   .move-icon { font-size: 22px; margin-right: 8px; vertical-align: middle; }
   .move-title { font-family: Georgia, serif; font-size: 18px; color: #3E2A3C; font-weight: normal; display: inline-block; vertical-align: middle; }
   .move-tag { display: inline-block; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-left: 10px; vertical-align: middle; font-weight: 700; }
+  .impact-line { margin: 0 0 12px 0; }
+  .impact-label { display: inline-block; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 8px; border-radius: 3px; background: #3E2A3C; color: #FAF5F1; font-weight: 700; margin-right: 8px; }
+  .impact-value { font-size: 13px; color: #3E2A3C; font-weight: 700; }
+  .why-top-three { background: #F7ECE4; border-radius: 6px; padding: 12px 14px; margin: 0 0 14px 0; border-left: 3px solid #C48B7A; font-size: 14px; line-height: 1.55; color: #3E2A3C; }
   .tag-defend { background: #E3E9F3; color: #2E4770; }
   .tag-attack { background: #FBEDED; color: #8C3535; }
   .tag-improve { background: #E8F3E8; color: #2D5F2D; }
@@ -81,18 +83,15 @@
   .callout { background: #F7ECE4; border-radius: 6px; padding: 14px 16px; margin-top: 14px; font-size: 14px; line-height: 1.6; color: #3E2A3C; border-left: 3px solid #C48B7A; }
   .callout strong { color: #3E2A3C; }
 
-  /* Market signals */
   .signal-grid { display: block; }
   .signal-block { padding: 16px 18px; background: #FFFFFF; border-radius: 8px; margin-bottom: 12px; border: 1px solid #ECE2DB; }
   .signal-block h4 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #8B6B7A; margin: 0 0 8px 0; font-weight: 600; }
   .signal-block p { margin: 0; font-size: 14px; line-height: 1.6; color: #2C2624; }
 
-  /* Watchlist */
   .watch-item { padding: 10px 0; border-bottom: 1px dashed #ECE2DB; font-size: 14px; line-height: 1.55; }
   .watch-item:last-child { border-bottom: none; }
   .watch-item strong { color: #3E2A3C; }
 
-  /* One Question */
   .question-box { background: linear-gradient(135deg, #3E2A3C, #5A3D54); color: #FAF5F1; border-radius: 10px; padding: 26px 28px; }
   .question-box .label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #C48B7A; margin: 0 0 10px 0; font-weight: 600; }
   .question-box h3 { font-family: Georgia, serif; font-size: 18px; font-weight: normal; margin: 0 0 14px 0; color: #FAF5F1; line-height: 1.35; }
@@ -100,312 +99,298 @@
   .question-buttons a { display: inline-block; padding: 10px 18px; margin-right: 8px; margin-bottom: 8px; background: #C48B7A; color: #FAF5F1; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
   .question-buttons a.secondary { background: transparent; border: 1px solid #C48B7A; color: #C48B7A; }
 
-  /* Footer */
   .footer { padding: 24px 32px; background: #3E2A3C; color: #D9BFC5; font-size: 12px; line-height: 1.6; text-align: center; }
   .footer a { color: #C48B7A; text-decoration: none; }
   .footer .tagline { font-family: Georgia, serif; font-style: italic; color: #D9BFC5; margin-bottom: 10px; font-size: 13px; }
   .footer .report-meta { margin-top: 10px; font-size: 11px; letter-spacing: 1px; color: #8B6B7A; }
 
-  /* Sample-report return banner (NOT part of the real report — sample-only) */
   .sample-banner { background: #2C2624; color: #F3EEEA; padding: 14px 24px; text-align: center; font-size: 13px; line-height: 1.5; }
   .sample-banner strong { color: #C48B7A; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 4px; font-weight: 700; }
   .sample-banner a.return-btn { display: inline-block; margin-top: 10px; padding: 8px 18px; background: #C48B7A; color: #FAF5F1; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
   .sample-banner a.return-btn:hover { background: #D9A895; }
 
-  /* Mobile */
   @media only screen and (max-width: 640px) {
     .wrap { padding: 0; }
     .container { border-radius: 0; }
     .header, .section, .from-brian, .footer { padding: 22px 20px; }
     .move { padding: 18px 18px; }
     .header h1 { font-size: 22px; }
+    .scorecard-values { display: block; }
+    .scorecard-values .peer { display: block; text-align: left; margin-top: 4px; }
   }
 </style>
 </head>
 <body>
 
-<!-- TOP RETURN BANNER (sample-only, not part of the real weekly email) -->
 <div class="sample-banner">
-  <strong>Sample report — not a real subscriber email</strong>
-  This is what weekly competitive intelligence looks like. The numbers and businesses below are illustrative.
+  <strong>Sample report - not a real subscriber email</strong>
+  Radiance Aesthetics is fictional. The businesses, numbers, and events below are illustrative, but the data types and report structure match what subscribers receive.
   <br>
-  <a class="return-btn" href="/">← Return to AI Lean Solutions</a>
+  <a class="return-btn" href="/">Return to AI Lean Solutions</a>
 </div>
 
 <div class="wrap">
   <div class="container">
 
-    <!-- HEADER -->
     <div class="header">
-      <p class="brand">AI Lean Solutions · Weekly Intelligence</p>
-      <h1>Good news, Dr. Morales — the discounting war is breaking.</h1>
-      <p class="subtitle">Radiance Aesthetics · Old Town Scottsdale · Week of April 13–19, 2026</p>
+      <p class="brand">AI Lean Solutions - Weekly Intelligence</p>
+      <h1>Look Lab is pushing deeper into Scottsdale.</h1>
+      <p class="subtitle">Radiance Aesthetics - Old Town Scottsdale - Week of May 10-16, 2026</p>
     </div>
 
-    <!-- FROM BRIAN -->
     <div class="from-brian">
-      <p class="label">— From Brian</p>
-      <p>Your Instagram blew up this week — engagement jumped 34%, almost entirely from those two short videos Jenna posted Tuesday. The "filler myths" format is working. Keep her doing it.</p>
-      <p>At the same time, something shifted in the Scottsdale market that we haven't seen in over two months: two of your tracked competitors raised their Botox prices, and a third quietly pulled their "new patient special" off their homepage. Translation: the race-to-the-bottom on pricing is ending.</p>
-      <p>When that happens, the spas who built real patient loyalty (you) pull ahead of the ones who rely on discounts to bring people in the door. This is your window.</p>
-      <p><strong class="bottomline">Three things worth doing this week:</strong> defend against a brand-new competitor who just opened a mile away, test a small price increase on Botox, and fix one operational leak that's quietly costing you about six bookings a week.</p>
-      <p class="signoff">— Brian Bricker<br>AI Lean Solutions</p>
+      <p class="label">- From Brian</p>
+      <p>The big move this week is <strong>Look Lab Med Spa</strong>. They already have strong Google review velocity in Phoenix and Scottsdale, and public reporting says they are preparing another Arizona location at The Shops Gainey Village. That is not just a new dot on a map. It is a polished brand moving into a high-income Scottsdale corridor.</p>
+      <p>Your own position is solid: 4.9 stars, 412 Google reviews, and a clean service mix around Botox, filler, laser, and skin health. But the market is getting louder. In our Phoenix metro dataset, 4.9 stars are table stakes. Review volume, review velocity, service clarity, and visible trust proof are where customers start making decisions.</p>
+      <p><strong class="bottomline">Three things worth doing this week:</strong> make your provider and product-safety proof easier to see, tighten your GLP-1 facial-restoration positioning, and rebuild your review ask so your public proof keeps pace with the brands gaining ground.</p>
+      <p class="signoff">- Brian Bricker<br>AI Lean Solutions</p>
     </div>
 
-    <!-- 1. YOUR POSITION -->
+    <div class="section">
+      <div class="competitive-read">
+        <p class="label">This Week's Competitive Read</p>
+        <div class="read-row">
+          <span class="read-key">Primary threat</span>
+          <span class="read-value"><strong>Look Lab Med Spa</strong> is expanding its Arizona footprint while already showing strong review momentum in Phoenix and Scottsdale.</span>
+        </div>
+        <div class="read-row">
+          <span class="read-key">Primary opportunity</span>
+          <span class="read-value">Local safety and credential stories are putting trust back in the buying decision. Your physician-led positioning is useful, but it needs to be more visible.</span>
+        </div>
+        <div class="read-row">
+          <span class="read-key">Do by Friday</span>
+          <span class="read-value">Add a short "Who treats you and what we use" trust block above the fold on your Botox and filler pages.</span>
+        </div>
+        <div class="read-row">
+          <span class="read-key">We're watching</span>
+          <span class="read-value">Look Lab's Gainey Village launch timing, nearby review velocity, GLP-1/weight-loss service additions, and pricing-page changes across your closest competitors.</span>
+        </div>
+      </div>
+    </div>
+
     <div class="section">
       <div><span class="section-num">1</span><h2>How You Stack Up This Week</h2></div>
-      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 18px 0;">Compared to the local med spas we track for you across Old Town, Paradise Valley, and North Scottsdale.</p>
+      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 18px 0;">Compared to your tracked competitors in Old Town, Paradise Valley, and North Scottsdale. Source types: Google Business Profiles, business websites, detected service/pricing pages, and public news.</p>
 
       <div class="scorecard">
-
         <div class="scorecard-row">
-          <div class="scorecard-metric">Google rating <span class="rank-1">🥇 Tied for 1st</span></div>
+          <div class="scorecard-metric">Google rating <span class="rank-1">Tied for 1st</span></div>
           <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 98%;"></span></div>
-          <div class="scorecard-values"><span class="you">You: 4.9 ★ (412 reviews)</span><span class="peer">Market median: 4.8 ★</span></div>
+          <div class="scorecard-values"><span class="you">You: 4.9 stars (412 reviews)</span><span class="peer">Tracked median: 4.9 stars</span></div>
         </div>
 
         <div class="scorecard-row">
-          <div class="scorecard-metric">BBB letter grade <span class="rank-1">🥇 Strongest in your set</span></div>
-          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 100%;"></span></div>
-          <div class="scorecard-values"><span class="you">You: A+ (BBB Accredited)</span><span class="peer">Two tracked competitors: A+ · One: A- · One: not rated</span></div>
-        </div>
-
-        <div class="scorecard-row">
-          <div class="scorecard-metric">New Google reviews, last 30 days <span class="rank-2">🥈 2nd of 5</span></div>
-          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 79%;"></span></div>
-          <div class="scorecard-values"><span class="you">You: +19</span><span class="peer">Top: Aesthetic MD — +24</span></div>
-        </div>
-
-        <div class="scorecard-row">
-          <div class="scorecard-metric">How fast you reply to reviews <span class="rank-3">🥉 3rd of 5 — room to grow</span></div>
-          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 27%; background: linear-gradient(90deg, #D9A895, #E8C4B5);"></span></div>
-          <div class="scorecard-values"><span class="you">You: 11 hours</span><span class="peer">Fastest: Skin by Lauren — 3 hours</span></div>
-        </div>
-
-        <div class="scorecard-row">
-          <div class="scorecard-metric">Instagram engagement rate <span class="rank-1">🥇 1st of 5</span></div>
-          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 100%;"></span></div>
-          <div class="scorecard-values"><span class="you">You: 4.1%</span><span class="peer">Market median: 2.3%</span></div>
-        </div>
-
-        <div class="scorecard-row">
-          <div class="scorecard-metric">Botox price (20 units) <span class="rank-2">Middle of the pack</span></div>
+          <div class="scorecard-metric">Google review volume <span class="rank-2">Middle of the pack</span></div>
           <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 56%;"></span></div>
-          <div class="scorecard-values"><span class="you">You: $280</span><span class="peer">Market median: $275</span></div>
+          <div class="scorecard-values"><span class="you">You: 412 reviews</span><span class="peer">Top tracked competitor: 1,021 reviews</span></div>
         </div>
 
+        <div class="scorecard-row">
+          <div class="scorecard-metric">New Google reviews since last snapshot <span class="rank-2">2nd fastest</span></div>
+          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 74%;"></span></div>
+          <div class="scorecard-values"><span class="you">You: +11</span><span class="peer">Top: Look Lab Scottsdale +18</span></div>
+        </div>
+
+        <div class="scorecard-row">
+          <div class="scorecard-metric">Detected service breadth <span class="rank-1">Strong coverage</span></div>
+          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 82%;"></span></div>
+          <div class="scorecard-values"><span class="you">You: Botox, filler, laser, skin health, weight loss</span><span class="peer">Tracked median: 4 service categories</span></div>
+        </div>
+
+        <div class="scorecard-row">
+          <div class="scorecard-metric">Pricing visibility <span class="rank-3">Behind the leaders</span></div>
+          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 42%; background: linear-gradient(90deg, #D9A895, #E8C4B5);"></span></div>
+          <div class="scorecard-values"><span class="you">You: partial pricing detected</span><span class="peer">Two tracked competitors list Botox and filler prices clearly</span></div>
+        </div>
+
+        <div class="scorecard-row">
+          <div class="scorecard-metric">Website freshness <span class="rank-2">Active</span></div>
+          <div class="scorecard-bar"><span class="scorecard-bar-fill" style="width: 68%;"></span></div>
+          <div class="scorecard-values"><span class="you">You: 2 pages changed this week</span><span class="peer">Most active: Lux Veritae, 5 new services detected</span></div>
+        </div>
       </div>
 
       <div class="trend">
-        <strong>Four-week trend:</strong> Google reviews <span class="up">▲ steady</span>. Yelp <span class="up">▲ picking up speed</span>. Instagram engagement <span class="up">▲ meaningful jump</span>. Review-reply speed <span class="down-good">▼ getting better</span> (was 18 hours last month, now 11). Whatever Jenna started doing on Instagram two weeks ago — it's working. Keep going.
+        <strong>Four-week read:</strong> Your rating is stable, review growth is <span class="up">positive</span>, and your service menu is competitive. The weak spot is not quality; it is <span class="watch">clarity</span>. Competitors with cleaner pricing, stronger credential pages, and obvious weight-loss-to-aesthetics pathways are easier for a first-time patient to understand.
       </div>
     </div>
 
-    <!-- 2. WHAT CHANGED -->
     <div class="section">
       <div><span class="section-num">2</span><h2>What Moved This Week</h2></div>
-      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 18px 0;">The actual changes we saw across your competitors' websites, reviews, and public posts — every item sourced.</p>
+      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 18px 0;">What changed across your tracked competitors, your own public profile, and the broader local market. We separate observed changes from our interpretation.</p>
 
       <div class="changed-group">
-        <h3>Competitor moves</h3>
-        <div class="changed-item"><strong>Aesthetic MD Scottsdale</strong> raised their Botox price from $13 to $14 per unit on their website between April 14 and 16. Their Dysport pricing stayed the same.</div>
-        <div class="changed-item"><strong>Skin by Lauren</strong> quietly took their "New Patient Botox $199" banner off the homepage on April 15. The promo page itself is still live but no longer linked from the main menu.</div>
-        <div class="changed-item"><strong>Paradise Valley Aesthetics</strong> launched a new Morpheus8 (a skin-tightening treatment) package starting at $2,400. No social media announcement — this looks like a quiet launch tied to a new machine.</div>
-        <div class="changed-item"><strong>Bella Aesthetics AZ</strong> added two new injectors to their team page. They're now six injectors deep (was four). When a spa expands capacity like this, a promotional push usually follows within 4–6 weeks.</div>
-        <div class="changed-item"><span class="tag-new">New</span><strong>Lumen Med Aesthetic</strong> just opened 1.2 miles from you on Scottsdale Road. Nurse-practitioner owned, six Google reviews so far, 4.7-star rating. <span class="tag-watch">Watchlist</span> We've added them to our tracking starting next week.</div>
+        <h3>Competitor moves we observed</h3>
+        <div class="changed-item"><span class="tag-new">New</span><strong>Lux Veritae Skin Spa</strong> added five detected service categories to its website: filler, laser, skin health, skincare, and weight loss. Our read: they are broadening beyond single-service aesthetics into a larger treatment-plan model.</div>
+        <div class="changed-item"><span class="tag-watch">Watch</span><strong>Look Lab Med Spa Scottsdale</strong> added 18 Google reviews since the prior snapshot while holding a 5.0-star rating. That is the strongest review-velocity signal in your tracked set this week.</div>
+        <div class="changed-item"><span class="tag-watch">Watch</span><strong>Med-Surg Aesthetics and Laser Academy</strong> added Botox, IV therapy, skin health, and weight-loss service language. Our read: this is a trust-and-training brand trying to widen the top of its funnel.</div>
+        <div class="changed-item"><span class="tag-good">Good</span>Your own Google rating held at 4.9 stars and your review count increased by 11. You are gaining proof; the issue is that <strong>Look Lab</strong> gained it faster this week.</div>
       </div>
 
       <div class="changed-group">
-        <h3>Review signal</h3>
-        <div class="changed-item"><span class="tag-good">Good</span>You got 19 new Google reviews, all 5-star. Three specifically named Jenna as the injector, two named Dr. Morales.</div>
-        <div class="changed-item"><strong>Aesthetic MD</strong> picked up 24 new reviews — but two of them were 3-star, both citing longer-than-expected wait times. This is the first time wait-time complaints have shown up in their reviews in over 90 days. Worth watching.</div>
-        <div class="changed-item"><strong>Skin by Lauren</strong> received a 2-star Yelp review with photos showing a bad lip filler outcome. Posted April 15, 11 people marked it "helpful," and the owner hasn't responded yet.</div>
-        <div class="changed-item"><strong>Paradise Valley Aesthetics</strong> had three reviews mention "Alyssa" by name. They're systematically training reviewers to name their injector — a loyalty-building pattern worth copying.</div>
+        <h3>Website and pricing signals</h3>
+        <div class="changed-item"><span class="tag-watch">Watch</span><strong>Inside Out Aesthetics</strong> made pricing easier to find on its injectables page. We detected Botox and filler price language in the latest website snapshot.</div>
+        <div class="changed-item"><span class="tag-new">New</span><strong>Poised Aesthetics</strong> added laser, skincare, and skin-health service language. This is not enough to act on by itself, but it confirms the Scottsdale market is clustering around skin-quality positioning.</div>
+        <div class="changed-item"><span class="tag-good">Good</span>Your Botox page is live and indexable, but the trust proof is buried. Provider credentials, product sourcing, and consent/safety language appear below the decision point.</div>
       </div>
 
       <div class="changed-group">
-        <h3>Pricing and promotions</h3>
-        <div class="changed-item">Market-median Botox price is now <strong>$13.50 per unit</strong>, up from $12.75 three weeks ago. <span class="tag-good">First upward move in 8 weeks.</span></div>
-        <div class="changed-item">Filler prices unchanged at $725 per syringe for Juvederm Ultra.</div>
-        <div class="changed-item"><strong>Bella Aesthetics</strong> is running "Buy 20 units of Dysport, get 10 free" through April 30.</div>
-        <div class="changed-item">Two mid-tier spas appeared on Groupon this week for the first time in six months. Could signal weakness at the low end of the market.</div>
+        <h3>Public market signals</h3>
+        <div class="changed-item">Per WhatNow Phoenix (May 8, 2026), <strong>Look Lab Med Spa</strong> is preparing to open another Arizona location at The Shops Gainey Village in late June. That puts a polished aesthetics brand into one of Scottsdale's highest-income nodes.</div>
+        <div class="changed-item">Per FDA public guidance on GLP-1 drugs, unapproved compounded GLP-1 products are not reviewed by FDA for safety, effectiveness, or quality. This matters because weight-loss offers are now tied directly to trust and medical oversight.</div>
+        <div class="changed-item">Local coverage of an alleged unlicensed Botox/filler injector in Glendale is likely to make credential proof more salient for patients shopping injectables. Our read: safety messaging is moving from back-office compliance to front-office marketing.</div>
       </div>
     </div>
 
-    <!-- 3. THREE MOVES -->
     <div class="section">
       <div><span class="section-num">3</span><h2>Three Moves Worth Making This Week</h2></div>
 
-      <!-- MOVE 1 -->
       <div class="move">
         <div class="move-header">
-          <span class="move-icon">🛡️</span>
-          <span class="move-title">Get ahead of the new spa down the road</span>
+          <span class="move-icon">1</span>
+          <span class="move-title">Put trust proof where patients decide</span>
           <span class="move-tag tag-defend">Defend</span>
         </div>
+        <p class="impact-line"><span class="impact-label">Trust</span><span class="impact-value">Free differentiation against newer and less credentialed competitors</span></p>
+        <p class="why-top-three"><strong>Why this made the top three:</strong> Local safety stories and GLP-1 sourcing concerns are making patients ask "Who is treating me, and what are they using?" Your answer exists, but it is not visible fast enough.</p>
 
         <p class="label-line">What's happening</p>
-        <p>A new med spa called Lumen Med Aesthetic just opened 1.2 miles from you. They have six reviews, 112 Instagram followers, and no paid advertising yet. In other words: they're small. Right now.</p>
+        <p>We observed that your Botox and filler pages mention physician oversight, but the proof sits below the first screen. At the same time, local and national stories are putting injectable safety, licensure, and product sourcing back into the customer's mind.</p>
 
         <p class="label-line">What it means for you</p>
-        <p>Brand-new spas win their first 20–50 patients from the nearest existing spa's "shopping" traffic — people who were already deciding between you and one other option and now suddenly have a third. Your Old Town location and Lumen's spot on Scottsdale Road share the same commuter corridor. If nobody does anything, they'll quietly pull 2–4 would-be patients away from you every week within two months.</p>
+        <p>When every med spa looks 4.9-star-good, trust proof becomes a tiebreaker. Newer brands can look polished. You can look polished and medically grounded.</p>
 
         <p class="label-line">What to do</p>
         <ol>
-          <li><strong>Today (15 minutes):</strong> Add a "Serving Scottsdale since [year]" trust line to the top of your homepage and Google Business profile. First-mover trust is your free advantage — use it before they can dilute it.</li>
-          <li><strong>Next two weeks ($300 test):</strong> Run a small Google Local Ads campaign targeting searches like "med spa near Scottsdale Road." If 3 out of 100 clickers book a consult, scale it. Below 2 out of 100, kill it.</li>
-          <li><strong>Ongoing:</strong> We're adding Lumen to your tracked competitor list starting next week, so you'll see their review growth, pricing, and promos alongside everyone else.</li>
+          <li><strong>Today:</strong> Add a three-line trust block above the fold on Botox and filler pages: provider credential, product source, and consultation standard.</li>
+          <li><strong>This week:</strong> Add a short "How we keep injectable treatments safe" page and link it from Botox, filler, and booking pages.</li>
+          <li><strong>Next report:</strong> We'll compare your trust-proof visibility against the same pages on <strong>Look Lab</strong>, <strong>Inside Out Aesthetics</strong>, and <strong>Med-Surg Aesthetics</strong>.</li>
         </ol>
 
         <div class="callout">
-          <strong>If I were you:</strong> I'd knock out step one today. Fifteen minutes, and it starts compounding the moment you publish it.
+          <strong>If I were you:</strong> I would not make this scary or legalistic. Three calm sentences beat a compliance lecture: who treats you, what product we use, and how we document safety.
         </div>
       </div>
 
-      <!-- MOVE 2 -->
       <div class="move">
         <div class="move-header">
-          <span class="move-icon">🎯</span>
-          <span class="move-title">Raise your Botox price by $1 per unit</span>
+          <span class="move-icon">2</span>
+          <span class="move-title">Turn weight loss into a skin-quality pathway</span>
           <span class="move-tag tag-attack">Grow revenue</span>
         </div>
+        <p class="impact-line"><span class="impact-label">Revenue</span><span class="impact-value">Turns a crowded service into a higher-ticket treatment plan</span></p>
+        <p class="why-top-three"><strong>Why this made the top three:</strong> Weight-loss service language is showing up across the market. The sharper opportunity is not "we offer GLP-1"; it is "we help your skin and face look right as your body changes."</p>
 
         <p class="label-line">What's happening</p>
-        <p>Two of your tracked competitors just raised their Botox prices. The market-median price has climbed from $12.75 to $13.50 per unit in three weeks. Skin by Lauren pulled their discount promo off the homepage — a signal that deep-discount acquisition isn't paying for them anymore. You're sitting at $14 per unit, right in the middle of the pack.</p>
+        <p>We detected weight-loss or body-change positioning across several Scottsdale competitors, including <strong>Lux Veritae</strong> and <strong>Med-Surg Aesthetics</strong>. National aesthetics coverage is also treating GLP-1 facial restoration as a distinct service line, not just an add-on filler appointment.</p>
 
         <p class="label-line">What it means for you</p>
-        <p>For the first time in two months, the whole market is moving up. When that happens, the spas with the strongest patient loyalty — which is you — gain pricing power fastest, because you're not fighting over the same discount-chasing shoppers. If you move now and hold, you set the new price before the slower spas catch up. If you wait, you're matching instead of leading.</p>
+        <p>If everyone says "medical weight loss," the market gets noisy fast. The better position is continuity: weight loss consult, skin-quality plan, facial balancing, and follow-up cadence.</p>
 
         <p class="label-line">What to do</p>
         <ol>
-          <li><strong>Starting Monday:</strong> Raise Botox from $14 to $15 per unit on your website and in your in-office menu.</li>
-          <li><strong>Same day:</strong> Email your existing members personally (not a mass blast) to let them know they're grandfathered at the old price through their current membership cycle. Turn the awkwardness into a loyalty moment.</li>
-          <li><strong>Track for 4 weeks:</strong> New-patient booking rate and member cancellation rate. If either moves more than 10%, we'll reassess together.</li>
+          <li><strong>Create one landing page:</strong> "Skin and facial aesthetics after weight loss."</li>
+          <li><strong>Use one clear pathway:</strong> consult, photos, skin-quality plan, filler/neurotoxin only if appropriate, follow-up at 8-12 weeks.</li>
+          <li><strong>Add one booking CTA:</strong> "Book a post-weight-loss skin consult" rather than pushing a product name first.</li>
         </ol>
 
         <div class="callout">
-          <strong>The math:</strong> A $1-per-unit increase, at your roughly 180 Botox treatments per month, is about $3,600 more per month in pure margin — if your booking rate holds. Even if you lose 10% of new bookings, you're still ahead by about $2,500 a month.
-          <br><br>
-          <strong>If I were you:</strong> Pair the increase with a small perk for grandfathered members — priority booking, or a free skin consult. Costs you almost nothing and buys you a year of goodwill insulation.
+          <strong>If I were you:</strong> I would make this a trust-and-continuity offer, not a discount offer. The customer is already nervous about looking different. Sell the plan.
         </div>
       </div>
 
-      <!-- MOVE 3 -->
       <div class="move">
         <div class="move-header">
-          <span class="move-icon">⚙️</span>
-          <span class="move-title">Fix the review-response bottleneck</span>
-          <span class="move-tag tag-improve">Operational fix</span>
+          <span class="move-icon">3</span>
+          <span class="move-title">Make review velocity a weekly operating number</span>
+          <span class="move-tag tag-improve">Improve</span>
         </div>
+        <p class="impact-line"><span class="impact-label">Ops</span><span class="impact-value">Closes the public-proof gap with competitors gaining reviews faster</span></p>
+        <p class="why-top-three"><strong>Why this made the top three:</strong> You gained 11 reviews, which is good. <strong>Look Lab</strong> gained more. In a 4.9-star market, review velocity is one of the few visible ways to keep moving up.</p>
 
         <p class="label-line">What's happening</p>
-        <p>Your team takes an average of 11 hours to respond to a new Google review. Skin by Lauren responds in 3 hours. Independent research (BrightLocal's 2025 local-search study) shows that when owners reply within 4 hours, more review-readers go on to actually book an appointment — because people browsing reviews are watching how engaged the owner is.</p>
+        <p>Your Google review count increased from the prior snapshot, but <strong>Look Lab Scottsdale</strong> added more reviews while keeping a perfect rating. That does not mean they are better. It means they are louder this week.</p>
 
         <p class="label-line">What it means for you</p>
-        <p>This isn't really a marketing problem. It's an operations problem wearing a marketing costume. You're not losing to Skin by Lauren on the <em>quality</em> of your replies — I read both, and yours are better. You're losing on <em>speed</em>. Every hour a glowing review sits unacknowledged, the next prospective patient reading it quietly concludes the owner isn't paying attention.</p>
+        <p>Public proof compounds. If a competitor gains reviews faster for several weeks in a row, they start winning the comparison before a patient ever reaches your website.</p>
 
         <p class="label-line">What to do</p>
         <ol>
-          <li><strong>Move review-responses off Dr. Morales</strong> and onto your front desk lead (or practice manager). Target: 3-hour response time Monday through Saturday.</li>
-          <li><strong>Build a simple two-tier system:</strong>
-            <ul style="margin: 6px 0;">
-              <li><em>5-star review:</em> front desk uses one of five pre-written templates, personalized with the reviewer's first name and treatment. Takes about 15 minutes of their day total.</li>
-              <li><em>Anything less than 5 stars, or anything that names a specific injector:</em> escalates to Dr. Morales for a personal response within 24 hours.</li>
-            </ul>
-          </li>
-          <li><strong>Measure it:</strong> log response timestamps each week. We'll report back in this same section until you're consistently under 4 hours.</li>
+          <li><strong>Set a weekly review target:</strong> 15 new Google reviews over the next 30 days.</li>
+          <li><strong>Standardize the ask:</strong> front desk sends the direct Google review link after completed treatment, not days later.</li>
+          <li><strong>Track one number:</strong> reviews gained since last report. We will keep reporting your velocity against your closest competitors.</li>
         </ol>
 
         <div class="callout">
-          <strong>The math:</strong> Setup takes 30 minutes. Ongoing effort: 15 minutes a day. If cutting your response time in half lifts your review-reader-to-booking rate by just 1 percentage point (a conservative estimate per BrightLocal), that's about 6 extra bookings a week at your current traffic levels. At your average first-visit revenue of $450, that's roughly $2,700 a week in bookings you're currently leaving on the table.
-          <br><br>
-          <strong>If I were you:</strong> This is Monday's conversation with your front desk lead. It's the highest-payoff change on the whole list, and it costs you nothing.
+          <strong>If I were you:</strong> I would put this on the weekly staff huddle. No speech, no guilt. Just the number, the goal, and the ask.
         </div>
       </div>
     </div>
 
-    <!-- 4. MARKET SIGNALS -->
     <div class="section">
       <div><span class="section-num">4</span><h2>What's Happening in the Market</h2></div>
 
       <div class="signal-grid">
-
         <div class="signal-block">
-          <h4>📈 Demand is climbing</h4>
-          <p>Arizona med spa first-visit bookings are up about 12% over the March average, driven by spring break and early wedding-season planning. Google searches for "botox scottsdale" are up 18% year-over-year for this week specifically. <strong>Action:</strong> Start your pre-wedding email sequence by April 28 — last year your May–June revenue was 22% above your 12-month average, and early-bookers reward the spas who reach out first.</p>
+          <h4>Ratings are no longer enough</h4>
+          <p>In the Phoenix metro data we track, high ratings are common. The businesses that stand out usually have stronger review volume, clearer service pages, better pricing visibility, or sharper trust proof. That is why this week's recommendations focus on public proof and positioning rather than "get to 4.9 stars."</p>
         </div>
 
         <div class="signal-block">
-          <h4>💰 Money sitting on the table</h4>
-          <p><strong>Allergan Allē spring bonus:</strong> members earn 500 bonus points on any Botox or Juvederm treatment through April 30. You're enrolled as an Allē partner. Send one SMS to your Allē-member patients this weekend — it's a five-minute job that typically moves the needle on bookings that same week.</p>
+          <h4>Service menus are broadening</h4>
+          <p>Website snapshots this week showed several competitors adding or clarifying services around laser, skin health, skincare, weight loss, and IV therapy. Our read: Scottsdale med spas are trying to turn one-off treatment shoppers into multi-service plans.</p>
         </div>
 
         <div class="signal-block">
-          <h4>📰 Local industry news this week</h4>
-          <p><strong>FDA warns Texas med spa over off-brand Botox</strong> <em>(WFAA, Apr 14)</em> — a Southlake spa was cited for using unapproved injectable product. Why this matters to you: insurance carriers and consumers are starting to ask spas to <em>show</em> their product sourcing. Worth being ready with a one-paragraph statement on your website.</p>
-          <br>
-          <p><strong>National Law Review: "Medspas on alert — the FDA says you're a dispenser too"</strong> <em>(Apr 23)</em> — explains a recent FDA position that brings cosmetic injectable practices under tighter dispensing rules. Not an emergency, but the kind of thing your malpractice attorney should see.</p>
-          <br>
-          <p><strong>MD Plastic Surgery &amp; MDSkin Bell unveil new Scottsdale location</strong> <em>(Arizona Foothills, Apr 21)</em> — not on your tracked list yet, but worth knowing. We're evaluating whether to add them next week.</p>
+          <h4>Safety is becoming marketable</h4>
+          <p>FDA guidance on GLP-1 products and local coverage of alleged unlicensed injecting both point in the same direction: patients have more reasons to ask about credentials and product sourcing. The businesses that answer those questions calmly will look more professional before the consult ever starts.</p>
         </div>
-
-        <div class="signal-block">
-          <h4>⚠️ On the horizon</h4>
-          <p><strong>Arizona House Bill 2431</strong> — proposed legislation that would tighten supervisory requirements for nurse-practitioner-owned cosmetic injectable practices. Still in committee, so no action needed yet. If it passes, it affects Lumen (NP-owned) more than it affects you (physician-owned). We'll track it.</p>
-          <br>
-          <p><strong>Instagram algorithm update (April 10):</strong> video posts are reportedly getting about 40% more reach than photo posts in the aesthetics space. This matches what Jenna's reels are doing for you. Push harder into short video.</p>
-        </div>
-
       </div>
     </div>
 
-    <!-- 5. WATCHLIST -->
     <div class="section">
       <div><span class="section-num">5</span><h2>On Our Watchlist</h2></div>
-      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 14px 0;">Things we're tracking that haven't moved enough to act on yet — but could in the next few weeks.</p>
+      <p style="font-size: 14px; color: #6B4D5C; margin: -8px 0 14px 0;">Things we are tracking that have not moved enough to drive a full recommendation yet.</p>
 
-      <div class="watch-item"><strong>Aesthetic MD Scottsdale:</strong> two wait-time complaints this week. If they hit five or more this month, they have a real capacity problem — and you have an opening to quietly win patients who mention shorter waits.</div>
-      <div class="watch-item"><strong>Bella Aesthetics:</strong> they just grew their injector team by 50%. A promotional push almost always follows this kind of hiring. We'll flag it the instant we see it.</div>
-      <div class="watch-item"><strong>Lumen Med Aesthetic:</strong> added to active tracking starting next week's report.</div>
-      <div class="watch-item"><strong>Groupon activity at the low end:</strong> if a third or fourth spa shows up on Groupon, that signals broader market softness — and we'd revisit the price-increase recommendation above.</div>
-      <div class="watch-item"><strong>BBB letter-grade movement:</strong> two of your tracked competitors hold an A+ rating, but one slipped to A- after a single complaint posted this month. We watch the BBB grade history weekly — a B-or-below rating tends to show up in patient research right before someone books elsewhere.</div>
+      <div class="watch-item"><strong>Look Lab Med Spa Scottsdale:</strong> strongest review-velocity competitor this week. We are watching whether the Gainey Village launch creates a second Scottsdale review engine.</div>
+      <div class="watch-item"><strong>Lux Veritae Skin Spa:</strong> broad service additions this week. We are watching whether weight loss becomes a visible lead offer or stays buried in the menu.</div>
+      <div class="watch-item"><strong>Inside Out Aesthetics:</strong> clearer pricing language appeared in the latest website snapshot. If more competitors follow, we will revisit whether Radiance should show more pricing publicly.</div>
+      <div class="watch-item"><strong>Med-Surg Aesthetics and Laser Academy:</strong> training/academy positioning plus service expansion could become a trust threat if they push safety and credentials hard.</div>
+      <div class="watch-item"><strong>Poised Aesthetics:</strong> new skin-health and skincare language points toward the same category shift: less "single treatment," more "skin plan."</div>
     </div>
 
-    <!-- 6. ONE QUESTION -->
     <div class="section">
       <div class="question-box">
         <p class="label">One question for you</p>
-        <h3>Want us to swap Lumen Med Aesthetic into your tracked list, or add them alongside your current set?</h3>
-        <p>We keep your tracked list tight on purpose so the signal stays strong and the report stays scannable. Our suggestion: swap out Bella Aesthetics (they have the least overlap with your ideal patient) and bring in Lumen. But it's your call — one click below and we'll update next week's report.</p>
+        <h3>Should we weight trust-proof signals more heavily in your report next week?</h3>
+        <p>Given the local safety stories and GLP-1 sourcing questions, we can put more attention on credentials, product sourcing, consent language, and provider bios. That may be more useful than another generic service-menu scan.</p>
         <div class="question-buttons">
-          <a href="mailto:brian@aileansolutions.com?subject=Swap%20Bella%20for%20Lumen">Swap Bella → Lumen</a>
-          <a href="mailto:brian@aileansolutions.com?subject=Add%20Lumen%20to%20tracked%20list" class="secondary">Add Lumen alongside</a>
-          <a href="mailto:brian@aileansolutions.com?subject=Keep%20current%20list" class="secondary">Keep current list</a>
+          <a href="mailto:brian@aileansolutions.com?subject=Sample%20report%20choice:%20trust%20signals">Yes - prioritize trust signals</a>
+          <a href="mailto:brian@aileansolutions.com?subject=Sample%20report%20choice:%20pricing%20signals" class="secondary">No - prioritize pricing</a>
+          <a href="mailto:brian@aileansolutions.com?subject=Sample%20report%20choice:%20review%20velocity" class="secondary">Focus on review velocity</a>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
-      <p class="tagline">Weekly competitive intelligence for owners who&rsquo;d rather run their business than stalk their competitors.</p>
+      <p class="tagline">Weekly competitive intelligence for owners who would rather run their business than stalk their competitors.</p>
       <p>
-        See something you want tracked? <a href="mailto:brian@aileansolutions.com?subject=Custom+request">Reply — Brian reads every one.</a><br>
+        See something you want tracked? <a href="mailto:brian@aileansolutions.com?subject=Custom+request">Reply - Brian reads every one.</a><br>
         <a href="#">Manage preferences</a> · <a href="#">Unsubscribe</a>
       </p>
-      <p class="report-meta">Prepared for Radiance Aesthetics · Week of April 13–19, 2026 · Report #14</p>
+      <p class="report-meta">Prepared for Radiance Aesthetics - Week of May 10-16, 2026 - Sample Report</p>
     </div>
 
   </div>
 </div>
 
-<!-- BOTTOM RETURN BANNER -->
 <div class="sample-banner">
   <strong>End of sample report</strong>
   Want one of these for your business each week?
   <br>
-  <a class="return-btn" href="/">← Return to AI Lean Solutions</a>
+  <a class="return-btn" href="/">Return to AI Lean Solutions</a>
 </div>
 
 </body>
 </html>
+
