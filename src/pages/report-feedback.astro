@@ -24,8 +24,8 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
           Help us make your next report sharper.
         </h1>
         <p class="mt-6 text-[17px] text-text-muted leading-relaxed">
-          Your report should get more useful every week. Send the quick answer from the report,
-          add context if you want, and Brian will read it before the next one is prepared.
+          One textbox is all we need. The report link already includes the business and report
+          details Brian needs to understand your note.
         </p>
       </div>
 
@@ -42,6 +42,9 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
           <input type="hidden" name="subject" id="subject" value="[Report Feedback] Weekly intelligence report" />
           <input type="hidden" name="business_id" id="business_id" />
           <input type="hidden" name="business_name" id="business_name_hidden" />
+          <input type="hidden" name="business_email" id="business_email" />
+          <input type="hidden" name="report_id" id="report_id" />
+          <input type="hidden" name="week_start" id="week_start" />
           <input type="hidden" name="week_ending" id="week_ending" />
           <input type="hidden" name="feedback_type" id="feedback_type" />
           <input type="hidden" name="question" id="question_hidden" />
@@ -55,41 +58,15 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
             <p id="week-label" class="mt-2 text-[14px] text-text-muted">Report feedback</p>
           </div>
 
-          <div id="selected-answer-card" class="hidden rounded-lg border border-brand-cyan/25 bg-brand-cyan/10 p-5">
-            <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Selected answer</p>
-            <p id="selected-answer-label" class="mt-2 text-[17px] font-semibold text-white"></p>
-          </div>
-
           <label class="block">
-            <span class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Your name <span class="normal-case tracking-normal text-text-dim">(optional)</span></span>
-            <input
-              type="text"
-              name="name"
-              autocomplete="name"
-              class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors"
-              placeholder="Jamie Ortega"
-            />
-          </label>
-
-          <label class="block">
-            <span class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Email <span class="normal-case tracking-normal text-text-dim">(optional, for follow-up)</span></span>
-            <input
-              type="email"
-              name="email"
-              autocomplete="email"
-              class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors"
-              placeholder="jamie@studio.co"
-            />
-          </label>
-
-          <label class="block">
-            <span id="message-label" class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Anything else we should know?</span>
+            <span id="message-label" class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Your feedback</span>
             <textarea
               id="message"
               name="message"
+              required
               rows="5"
               class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors resize-none"
-              placeholder="Add context, suggest a competitor, ask us to track something differently..."
+              placeholder="Change the competitor list, watch a different signal, explain what would make this more useful..."
             ></textarea>
           </label>
 
@@ -102,9 +79,7 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
                 <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-            <p class="text-[13px] text-text-muted">
-              Goes straight to Brian. No account required.
-            </p>
+            <p class="text-[13px] text-text-muted">Goes straight to Brian with the report context attached.</p>
           </div>
         </form>
 
@@ -112,12 +87,11 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
           <p class="section-label mb-4">// What happens next</p>
           <div class="space-y-5 text-[15px] leading-relaxed text-text-muted">
             <p>
-              We use report feedback to tune the next report: competitors tracked, sections emphasized,
-              and what deserves Brian&rsquo;s attention before anything is sent.
+              Your note is sent with hidden report context: business name, business ID,
+              email on file, report ID, and report week.
             </p>
             <p>
-              Simple answers get folded into the next report. Anything that looks urgent or high-value
-              gets raised for review first.
+              Brian can act on it without asking you to re-enter details we already know.
             </p>
           </div>
         </aside>
@@ -162,6 +136,9 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
       if (!form) return;
 
       const businessName = params.get('business_name') || 'Weekly report';
+      const businessEmail = params.get('business_email') || '';
+      const reportId = params.get('report_id') || '';
+      const weekStart = params.get('week_start') || '';
       const weekEnding = params.get('week_ending') || '';
       const feedbackType = params.get('feedback_type') || 'general';
       const question = params.get('question') || '';
@@ -175,19 +152,16 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
 
       document.getElementById('business_id').value = params.get('business_id') || '';
       document.getElementById('business_name_hidden').value = businessName;
+      document.getElementById('business_email').value = businessEmail;
+      document.getElementById('report_id').value = reportId;
+      document.getElementById('week_start').value = weekStart;
       document.getElementById('week_ending').value = weekEnding;
       document.getElementById('feedback_type').value = feedbackType;
       document.getElementById('question_hidden').value = question;
       document.getElementById('selected_answer_hidden').value = answer;
       document.getElementById('action_key').value = actionKey;
       document.getElementById('source_url').value = window.location.href;
-      document.getElementById('subject').value = '[Report Feedback] ' + businessName + (weekEnding ? ' - Week ending ' + weekEnding : '');
-
-      if (answer) {
-        document.getElementById('selected-answer-card').classList.remove('hidden');
-        document.getElementById('selected-answer-label').textContent = answer;
-        document.getElementById('message-label').textContent = 'Want to add context?';
-      }
+      document.getElementById('subject').value = '[Report Feedback] ' + businessName + (reportId ? ' - ' + reportId : '') + (weekEnding ? ' - Week ending ' + weekEnding : '');
 
       if (question) {
         const contextCard = document.getElementById('context-card');
@@ -200,6 +174,12 @@ const description = 'Send feedback on your AI Lean Solutions weekly intelligence
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         if (form.botcheck && form.botcheck.checked) return;
+
+        const message = document.getElementById('message');
+        if (!message.value.trim()) {
+          message.focus();
+          return;
+        }
 
         const btn = form.querySelector('button[type=submit]');
         const originalLabel = btn.innerHTML;
