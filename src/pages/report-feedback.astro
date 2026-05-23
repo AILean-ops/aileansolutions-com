@@ -1,0 +1,235 @@
+---
+import Base from '../layouts/Base.astro';
+
+const description = 'Send feedback on your AI Lean Solutions weekly intelligence report.';
+
+/*
+  Report feedback wiring
+  ----------------------
+  Report emails link here with query params. This page turns those links into a
+  reliable Web3Forms submission instead of embedding forms in email clients.
+*/
+---
+
+<Base title="Report feedback" description={description}>
+
+  <section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32 bg-grain">
+    <div class="aurora"></div>
+    <div class="absolute inset-0 bg-grid opacity-50"></div>
+
+    <div class="container-site relative">
+      <div class="max-w-2xl">
+        <p class="section-label mb-5">// Report feedback</p>
+        <h1 class="font-display font-bold tracking-tightest text-[clamp(2rem,6vw,4.5rem)] leading-[1.02]">
+          Help us make your next report sharper.
+        </h1>
+        <p class="mt-6 text-[17px] text-text-muted leading-relaxed">
+          Your report should get more useful every week. Send the quick answer from the report,
+          add context if you want, and Brian will read it before the next one is prepared.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <form
+          id="report-feedback-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          novalidate
+          class="card p-6 md:p-8 grid gap-5"
+        >
+          <input type="hidden" name="access_key" value="638f05ca-f33a-4c10-bba2-cc0c4e757cb1" />
+          <input type="hidden" name="from_name" value="AI Lean Solutions report feedback" />
+          <input type="hidden" name="subject" id="subject" value="[Report Feedback] Weekly intelligence report" />
+          <input type="hidden" name="business_id" id="business_id" />
+          <input type="hidden" name="business_name" id="business_name_hidden" />
+          <input type="hidden" name="week_ending" id="week_ending" />
+          <input type="hidden" name="feedback_type" id="feedback_type" />
+          <input type="hidden" name="question" id="question_hidden" />
+          <input type="hidden" name="selected_answer" id="selected_answer_hidden" />
+          <input type="hidden" name="action_key" id="action_key" />
+          <input type="hidden" name="source_url" id="source_url" />
+
+          <div id="context-card" class="rounded-lg border border-white/10 bg-ink-800 p-5">
+            <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Report context</p>
+            <h2 id="business-name" class="mt-3 font-display text-2xl font-bold tracking-tight">Weekly report</h2>
+            <p id="week-label" class="mt-2 text-[14px] text-text-muted">Report feedback</p>
+          </div>
+
+          <div id="selected-answer-card" class="hidden rounded-lg border border-brand-cyan/25 bg-brand-cyan/10 p-5">
+            <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Selected answer</p>
+            <p id="selected-answer-label" class="mt-2 text-[17px] font-semibold text-white"></p>
+          </div>
+
+          <label class="block">
+            <span class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Your name <span class="normal-case tracking-normal text-text-dim">(optional)</span></span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors"
+              placeholder="Jamie Ortega"
+            />
+          </label>
+
+          <label class="block">
+            <span class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Email <span class="normal-case tracking-normal text-text-dim">(optional, for follow-up)</span></span>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors"
+              placeholder="jamie@studio.co"
+            />
+          </label>
+
+          <label class="block">
+            <span id="message-label" class="block font-mono text-[11px] uppercase tracking-label text-text-muted mb-2">Anything else we should know?</span>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="w-full px-4 py-3 bg-ink-800 border border-white/10 rounded-lg font-sans text-white placeholder:text-text-dim focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 transition-colors resize-none"
+              placeholder="Add context, suggest a competitor, ask us to track something differently..."
+            ></textarea>
+          </label>
+
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button type="submit" class="btn-primary">
+              Send feedback
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p class="text-[13px] text-text-muted">
+              Goes straight to Brian. No account required.
+            </p>
+          </div>
+        </form>
+
+        <aside class="card p-6 md:p-8">
+          <p class="section-label mb-4">// What happens next</p>
+          <div class="space-y-5 text-[15px] leading-relaxed text-text-muted">
+            <p>
+              We use report feedback to tune the next report: competitors tracked, sections emphasized,
+              and what deserves Brian&rsquo;s attention before anything is sent.
+            </p>
+            <p>
+              Simple answers get folded into the next report. Anything that looks urgent or high-value
+              gets raised for review first.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <div id="report-feedback-thanks" class="hidden mt-14 max-w-2xl">
+        <div class="card p-8 md:p-10">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="inline-flex w-8 h-8 rounded-full bg-signal-up/15 text-signal-up items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7.5 5.5 11 12 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <p class="font-mono text-[11px] uppercase tracking-label text-signal-up">Feedback sent</p>
+          </div>
+          <h2 class="font-display text-3xl font-bold tracking-tight">Got it. Thank you.</h2>
+          <p class="mt-4 text-text-muted text-[16px] leading-relaxed">
+            We&rsquo;ll use this before the next report is prepared. If it needs a direct reply,
+            Brian will follow up.
+          </p>
+        </div>
+      </div>
+
+      <div id="report-feedback-fallback" class="hidden mt-8 max-w-2xl">
+        <div class="card p-6 border-amber-accent/30">
+          <p class="text-[15px] leading-relaxed">
+            Something went wrong sending that. Please email Brian directly at
+            <a href="mailto:Brian.Bricker@AILeansolutions.com?subject=Report%20feedback" class="text-brand-cyan underline underline-offset-4">
+              Brian.Bricker@AILeansolutions.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const form = document.getElementById('report-feedback-form');
+      const thanks = document.getElementById('report-feedback-thanks');
+      const fallback = document.getElementById('report-feedback-fallback');
+      if (!form) return;
+
+      const businessName = params.get('business_name') || 'Weekly report';
+      const weekEnding = params.get('week_ending') || '';
+      const feedbackType = params.get('feedback_type') || 'general';
+      const question = params.get('question') || '';
+      const answer = params.get('answer') || '';
+      const actionKey = params.get('action_key') || '';
+
+      document.getElementById('business-name').textContent = businessName;
+      document.getElementById('week-label').textContent = weekEnding
+        ? 'Week ending ' + weekEnding
+        : 'Report feedback';
+
+      document.getElementById('business_id').value = params.get('business_id') || '';
+      document.getElementById('business_name_hidden').value = businessName;
+      document.getElementById('week_ending').value = weekEnding;
+      document.getElementById('feedback_type').value = feedbackType;
+      document.getElementById('question_hidden').value = question;
+      document.getElementById('selected_answer_hidden').value = answer;
+      document.getElementById('action_key').value = actionKey;
+      document.getElementById('source_url').value = window.location.href;
+      document.getElementById('subject').value = '[Report Feedback] ' + businessName + (weekEnding ? ' - Week ending ' + weekEnding : '');
+
+      if (answer) {
+        document.getElementById('selected-answer-card').classList.remove('hidden');
+        document.getElementById('selected-answer-label').textContent = answer;
+        document.getElementById('message-label').textContent = 'Want to add context?';
+      }
+
+      if (question) {
+        const contextCard = document.getElementById('context-card');
+        const p = document.createElement('p');
+        p.className = 'mt-4 text-[14px] text-text-muted leading-relaxed';
+        p.textContent = question;
+        contextCard.appendChild(p);
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (form.botcheck && form.botcheck.checked) return;
+
+        const btn = form.querySelector('button[type=submit]');
+        const originalLabel = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = 'Sending…';
+
+        try {
+          const data = new FormData(form);
+          const obj = {};
+          data.forEach((v, k) => { obj[k] = v; });
+          const res = await fetch(form.action, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify(obj),
+          });
+          const json = await res.json().catch(() => ({}));
+          if (!res.ok || json.success === false) throw new Error(json.message || 'not ok');
+          form.classList.add('hidden');
+          thanks.classList.remove('hidden');
+          thanks.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (err) {
+          btn.disabled = false;
+          btn.innerHTML = originalLabel;
+          fallback.classList.remove('hidden');
+        }
+      });
+    })();
+  </script>
+
+</Base>
