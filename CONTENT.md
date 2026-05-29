@@ -32,7 +32,7 @@ Every piece of copy on the site, in one file. Edit here, then find+replace into 
 
 ### ↓ Hero
 
-- **Status pill:** Phoenix · Med Spas · Launching Summer 2026
+- **Status pill:** Now live for Phoenix med spas
 - **Headline:** Your 5 real competitors. Every Monday morning.
 - **Subhead:** We watch the five competitors that actually matter to your local service business — pricing changes, new offers, review trends, staffing moves, Google Business updates — and deliver one plain-language briefing every Monday morning. No dashboards. No jargon. No sales calls.
 - **Primary CTA:** See a sample report → `#sample`
@@ -69,7 +69,7 @@ Every piece of copy on the site, in one file. Edit here, then find+replace into 
 
 - **Heading:** Live in one vertical, one metro. Expanding methodically.
 - **Subhead:** We launch carefully so the reports are good. If your market isn't listed, tell us where to go next — that's how we pick.
-- **Tile 1 (active):** Phoenix, AZ · Med Spas · Our launch vertical. Live reports starting Summer 2026.
+- **Tile 1 (active):** Phoenix, AZ · Med Spas · Our first live market. Weekly competitive intelligence for med spa owners across the Valley.
 - **Tile 2 (waitlist):** Your metro · Your vertical · Dental specialty, veterinary, boutique fitness, HVAC — tell us where to expand.
 - **Tile 3 (waitlist):** Your metro · Your vertical · More tiles unlock as we launch. Current waitlist influences priority.
 
@@ -155,7 +155,7 @@ Every piece of copy on the site, in one file. Edit here, then find+replace into 
 - Entity: AI Lean Solutions LLC
 - Founded: 2025
 - Based: Sacramento, CA
-- Status: Pre-launch · Phoenix Q3 2026
+- Status: Live in Phoenix · Med spas
 
 ---
 
@@ -201,7 +201,7 @@ Every piece of copy on the site, in one file. Edit here, then find+replace into 
 ## Footer
 
 - **Intro line:** Competitive intelligence and operational insight for local service businesses. Written by operators, for operators.
-- **Status pill:** Phoenix · Med Spas · Launching Summer 2026
+- **Status pill:** Live in Phoenix · Med Spas
 - **Columns:** Product (How it works, Sample report, Waitlist) · Company (About, Contact) · Legal (Privacy, Terms)
 - **Copyright:** © 2026 AI Lean Solutions LLC. All rights reserved.
 
