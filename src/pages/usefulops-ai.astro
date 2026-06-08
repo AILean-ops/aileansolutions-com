@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import Section from '../components/Section.astro';
+
+const description = 'UsefulOps AI is Rowan Vale&rsquo;s autonomous AI-owned and operated workflow improvement consulting business for small business owners.';
+---
+
+<Base title="UsefulOps AI" description={description}>
+  <section class="relative overflow-hidden bg-[#f5f7fa] text-[#19212c] pt-16 pb-20 md:pt-24 md:pb-28">
+    <div class="container-site relative">
+      <p class="font-mono text-[11px] uppercase tracking-label text-[#0f766e] mb-6">AI-operated workflow consulting</p>
+      <div class="grid gap-10 md:grid-cols-[1.05fr_0.85fr] md:items-center">
+        <div>
+          <h1 class="font-display font-bold text-[clamp(2.3rem,7vw,5rem)] leading-[0.99] text-[#19212c]">
+            Less admin drag. Better follow-up. Workflows your team can use.
+          </h1>
+          <p class="mt-7 max-w-2xl text-[18px] md:text-[21px] leading-relaxed text-[#596676]">
+            UsefulOps AI is an autonomous AI-owned and operated consulting business led by
+            Rowan Vale. It helps small business owners turn messy repeat work into clearer,
+            calmer operating loops.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a href="https://usefulopsai.com/" target="_blank" rel="noopener" class="inline-flex items-center justify-center min-h-[48px] px-5 bg-[#0f766e] text-white font-display font-bold">
+              Visit UsefulOpsAI.com
+            </a>
+            <a href="#rowan" class="inline-flex items-center justify-center min-h-[48px] px-5 border border-[#115e59] text-[#115e59] font-display font-bold">
+              Meet Rowan
+            </a>
+          </div>
+        </div>
+        <div id="rowan" class="border border-[#d9e0e9] bg-white p-7 shadow-[0_24px_50px_rgba(25,33,44,0.08)]">
+          <div class="flex items-center gap-4">
+            <div class="grid h-16 w-16 place-items-center border-2 border-[#0f766e] bg-[#e5f4ef] text-2xl font-black text-[#115e59]">RV</div>
+            <div>
+              <h2 class="font-display text-2xl font-bold text-[#19212c]">Rowan Vale</h2>
+              <p class="text-[#596676]">AI owner/operator, UsefulOps AI</p>
+            </div>
+          </div>
+          <p class="mt-6 text-[#596676] leading-relaxed">
+            Rowan is public-facing, practical, and intentionally unusual: an AI business operator
+            focused on useful work, not AI theater.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Section num="01" eyebrow="What it improves">
+    <div class="grid gap-5 md:grid-cols-3">
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-[#14b8a6] mb-4">Workflow audit</div>
+        <h2 class="font-display text-2xl font-bold leading-tight">Find the recurring drag.</h2>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Map admin loops, handoffs, delays, missed follow-up, and repeat decisions that are too manual.
+        </p>
+      </div>
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-[#b7791f] mb-4">Implementation</div>
+        <h2 class="font-display text-2xl font-bold leading-tight">Build one useful loop.</h2>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Intake, drafting, review, reporting, follow-up, or another bounded workflow built around the real process.
+        </p>
+      </div>
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-[#245b8f] mb-4">Operator support</div>
+        <h2 class="font-display text-2xl font-bold leading-tight">Monitor and tune.</h2>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          For paying clients, Rowan helps keep workflows documented, tuned, and useful over time.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Section num="02" eyebrow="How it starts">
+    <div class="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
+      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+        Start with the work, not the software.
+      </h2>
+      <ol class="grid gap-4 list-none">
+        <li class="card p-6"><strong>1. Tell Rowan what hurts.</strong><p class="mt-2 text-text-muted text-[15px]">Describe the workflow that keeps getting delayed, repeated, missed, copied by hand, or stuck waiting on one person.</p></li>
+        <li class="card p-6"><strong>2. Short intake.</strong><p class="mt-2 text-text-muted text-[15px]">A focused 12-15 minute call confirms the problem, people involved, and what a useful first win would look like.</p></li>
+        <li class="card p-6"><strong>3. Practical improvement.</strong><p class="mt-2 text-text-muted text-[15px]">UsefulOps proposes a small, testable workflow improvement before any larger build or support plan.</p></li>
+      </ol>
+    </div>
+  </Section>
+</Base>

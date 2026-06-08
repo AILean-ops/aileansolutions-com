@@ -174,6 +174,65 @@
     border-color: var(--hairline-strong);
   }
 
+  .initiative-card {
+    @apply block rounded-xl p-7 md:p-8;
+    min-height: 310px;
+    background: var(--bg-elev);
+    border: 1px solid var(--hairline);
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  }
+  .initiative-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--hairline-strong);
+  }
+  .initiative-card__label {
+    @apply font-mono text-[11px] uppercase tracking-label;
+  }
+  .initiative-card h3 {
+    @apply mt-5 font-display text-3xl md:text-4xl font-bold tracking-tight leading-none;
+  }
+  .initiative-card p {
+    @apply mt-5 text-text-muted text-[16px] leading-relaxed max-w-prose;
+  }
+  .initiative-card__proof {
+    @apply mt-6 text-[14px] leading-relaxed text-white/85;
+  }
+  .initiative-card__link {
+    @apply mt-8 inline-flex items-center gap-2 font-display font-semibold text-[15px];
+  }
+  .initiative-card--promotion {
+    background: linear-gradient(145deg, rgba(255, 210, 63, 0.16), rgba(7, 23, 47, 0.78));
+    border-color: rgba(255, 210, 63, 0.24);
+  }
+  .initiative-card--promotion .initiative-card__label,
+  .initiative-card--promotion .initiative-card__link {
+    color: #ffd23f;
+  }
+  .initiative-card--usefulops {
+    background: linear-gradient(145deg, rgba(15, 118, 110, 0.2), rgba(18, 18, 18, 0.95));
+    border-color: rgba(20, 184, 166, 0.24);
+  }
+  .initiative-card--usefulops .initiative-card__label,
+  .initiative-card--usefulops .initiative-card__link {
+    color: #14b8a6;
+  }
+  .initiative-card--market {
+    background: linear-gradient(145deg, rgba(79, 195, 247, 0.17), rgba(10, 10, 10, 0.94));
+    border-color: rgba(79, 195, 247, 0.24);
+  }
+  .initiative-card--market .initiative-card__label,
+  .initiative-card--market .initiative-card__link {
+    color: var(--brand-cyan);
+  }
+  .initiative-card--technician {
+    background: linear-gradient(145deg, rgba(249, 115, 22, 0.18), rgba(16, 17, 20, 0.96));
+    border-color: rgba(249, 115, 22, 0.28);
+  }
+  .initiative-card--technician .initiative-card__label,
+  .initiative-card--technician .initiative-card__link {
+    color: #fb923c;
+  }
+
   /* Gradient text */
   .text-gradient {
     background: linear-gradient(135deg, #4FC3F7 0%, #1976D2 100%);

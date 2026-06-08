@@ -1,0 +1,307 @@
+---
+import Base from '../layouts/Base.astro';
+import Section from '../components/Section.astro';
+import MarketTile from '../components/MarketTile.astro';
+import ReportPreview from '../components/ReportPreview.astro';
+
+const description = 'Weekly competitive intelligence for local service businesses. AI Lean Solutions watches the businesses competing for your customers and sends a clear weekly summary of what changed and what to do about it.';
+---
+
+<Base title="Market Intelligence" description={description}>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-36 bg-grain">
+    <div class="aurora"></div>
+    <div class="absolute inset-0 bg-grid opacity-60"></div>
+
+    <div class="container-site relative">
+
+      <!-- Phoenix live banner — loud, on-brand, excited -->
+      <div class="flex items-center mb-10 animate-fade-in">
+        <span class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-gradient-to-r from-brand-cyan to-brand-azure shadow-xl shadow-brand-cyan/30">
+          <span class="inline-block w-3 h-3 rounded-full bg-white animate-pulse-slow"></span>
+          <span class="font-display font-bold text-[15px] md:text-[17px] tracking-tight text-white uppercase">
+            AI Lean Solutions market intelligence
+          </span>
+        </span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="font-display font-bold tracking-tightest text-[clamp(2.25rem,7vw,5.5rem)] leading-[0.98] text-white max-w-[18ch] animate-fade-up">
+        Know your real competitors.<br/>
+        <span class="text-gradient">Every week.</span>
+      </h1>
+
+      <!-- Subhead -->
+      <p class="mt-8 max-w-2xl text-[17px] md:text-[19px] text-text-muted leading-relaxed animate-fade-up" style="animation-delay:120ms">
+        We watch the businesses competing for your customers: pricing changes, new services,
+        review trends, staffing moves, Google Business updates — and send you one clear weekly
+        summary of what changed and what to do about it. No dashboards. No login. No sales calls.
+      </p>
+
+      <!-- CTA row -->
+      <div class="mt-10 flex flex-wrap items-center gap-3 animate-fade-up" style="animation-delay:240ms">
+        <a href="#sample" class="btn-primary">
+          See a sample report
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M6 2v8m-3-3 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="/signup" class="btn-secondary">
+          Notify me when you launch in my market
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROBLEM
+       ============================================================ -->
+  <Section num="01" eyebrow="The problem" id="problem">
+    <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[22ch] leading-[1.05]">
+      You&rsquo;re competing against businesses with more dedicated market-watching time.
+    </h2>
+    <p class="mt-5 text-text-muted max-w-prose text-[17px] leading-relaxed">
+      National chains and franchises often have people watching the local market.
+      You have a business to run, and three problems pile up:
+    </p>
+
+    <div class="mt-12 grid gap-4 md:grid-cols-3">
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-4">Problem 01</div>
+        <h3 class="font-display text-xl font-semibold leading-tight">
+          You don&rsquo;t have hours to watch competitors.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Tracking real competitors across Google, Instagram, Yelp, websites, and licensing boards
+          takes hours every week. It is important work, but it is hard to keep doing consistently.
+        </p>
+      </div>
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-4">Problem 02</div>
+        <h3 class="font-display text-xl font-semibold leading-tight">
+          The information is everywhere and nowhere.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Google Alerts misses half of it. Review tools show you stars, not strategy. Social tools
+          show follower counts, not pricing changes. No single tool puts it all together.
+        </p>
+      </div>
+      <div class="card p-7">
+        <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-4">Problem 03</div>
+        <h3 class="font-display text-xl font-semibold leading-tight">
+          Consultants are expensive and often do not watch.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Many agencies write strategy decks. Far fewer spend Thursday afternoon checking
+          whether the business across town raised prices or changed services.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- ============================================================
+       SOLUTION
+       ============================================================ -->
+  <Section num="02" eyebrow="What we do">
+    <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[22ch] leading-[1.05]">
+      We do the watching.<br/>You get the benefit.
+    </h2>
+    <p class="mt-5 text-text-muted max-w-prose text-[17px] leading-relaxed">
+      Three things happen every week.
+    </p>
+
+    <ol class="mt-14 grid gap-6 md:grid-cols-3 list-none">
+      <li class="relative card p-7">
+        <div class="absolute -top-3 left-6 font-mono text-[11px] uppercase tracking-label px-2 py-0.5 bg-ink-900 border border-white/10 rounded-sm text-brand-cyan">
+          Step 01
+        </div>
+        <h3 class="font-display text-xl font-semibold leading-tight mt-4">
+          Find your real competitors.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Not the national chain. Not the location across the state. The handful of local businesses
+          actually pulling from your customer pool. We identify them with you in week one.
+        </p>
+      </li>
+      <li class="relative card p-7">
+        <div class="absolute -top-3 left-6 font-mono text-[11px] uppercase tracking-label px-2 py-0.5 bg-ink-900 border border-white/10 rounded-sm text-brand-cyan">
+          Step 02
+        </div>
+        <h3 class="font-display text-xl font-semibold leading-tight mt-4">
+          Catch what changed this week.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          Pricing shifts, new services, staffing moves, review trends, website updates,
+          Google Business changes, licensing news. Watched daily, summarized weekly.
+        </p>
+      </li>
+      <li class="relative card p-7">
+        <div class="absolute -top-3 left-6 font-mono text-[11px] uppercase tracking-label px-2 py-0.5 bg-ink-900 border border-white/10 rounded-sm text-brand-cyan">
+          Step 03
+        </div>
+        <h3 class="font-display text-xl font-semibold leading-tight mt-4">
+          Send you plain-language intelligence.
+        </h3>
+        <p class="mt-3 text-text-muted text-[15px] leading-relaxed">
+          One email a week. What happened, how you stack up, and three specific moves to
+          consider. Written by someone who&rsquo;s actually run a business, not a marketing team.
+        </p>
+      </li>
+    </ol>
+  </Section>
+
+  <!-- ============================================================
+       SAMPLE REPORT
+       ============================================================ -->
+  <Section num="03" eyebrow="Sample report" id="sample">
+    <div class="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-center">
+      <div>
+        <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+          This is what lands in your inbox.
+        </h2>
+        <p class="mt-5 text-text-muted text-[17px] leading-relaxed max-w-prose">
+          No login. No dashboard. No &ldquo;check our platform for updates.&rdquo; One email each week,
+          written in a voice you&rsquo;ll actually want to read.
+        </p>
+        <div class="mt-8 space-y-3">
+          <div class="flex items-start gap-3">
+            <span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-brand-cyan"></span>
+            <p class="text-[15px] text-white/90">Where you stand against the businesses we track for you.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-brand-cyan"></span>
+            <p class="text-[15px] text-white/90">Every pricing and service change they made in the past 7 days.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-brand-cyan"></span>
+            <p class="text-[15px] text-white/90">Three specific, practical moves to consider this week.</p>
+          </div>
+        </div>
+        <a href="/sample-report/radiance-aesthetics.html" target="_blank" rel="noopener" class="btn-primary mt-10">
+          Read the full sample
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="md:pl-6">
+        <ReportPreview />
+      </div>
+    </div>
+  </Section>
+
+  <!-- ============================================================
+       WHO THIS IS FOR
+       ============================================================ -->
+  <Section num="04" eyebrow="Who this is for">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[20ch] leading-[1.05]">
+        Starting in one industry, one city.<br/>Adding more carefully.
+      </h2>
+      <p class="text-text-muted text-[15px] max-w-sm leading-relaxed">
+        We launch slowly so the reports are good. If your industry or city isn&rsquo;t listed yet,
+        tell us where you are &mdash; that&rsquo;s how we choose where to go next.
+      </p>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <MarketTile
+        status="live"
+        metro="Phoenix, AZ"
+        vertical="Med Spas"
+        note="Our first live market. Weekly competitive intelligence for med spa owners across the Valley."
+        href="/product"
+      />
+      <MarketTile
+        status="waitlist"
+        metro="Your city"
+        vertical="Your industry"
+        note="Dental, veterinary, boutique fitness, HVAC, and more. Tell us where you are and we&rsquo;ll add it to the list."
+        href="/signup"
+      />
+    </div>
+  </Section>
+
+  <!-- ============================================================
+       WHY US
+       ============================================================ -->
+  <Section num="05" eyebrow="Why us">
+    <div class="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-start">
+      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+        Built by someone who&rsquo;s<br/>actually run a business.
+      </h2>
+
+      <div class="space-y-10">
+        <div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">01 · Background</div>
+          <h3 class="font-display text-xl font-semibold leading-tight">
+            Twenty years running operations.
+          </h3>
+          <p class="mt-2 text-text-muted text-[15px] leading-relaxed max-w-prose">
+            Brian Bricker spent two decades in process improvement and business leadership
+            before building this. The software does the watching. He trained it on what
+            useful weekly competitive intelligence should actually say.
+          </p>
+        </div>
+        <div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Product</div>
+          <h3 class="font-display text-xl font-semibold leading-tight">
+            Reports you&rsquo;ll actually read.
+          </h3>
+          <p class="mt-2 text-text-muted text-[15px] leading-relaxed max-w-prose">
+            No dashboards to log into. No spreadsheets to download. One email a week, readable
+            in about six minutes &mdash; which is about how long your first coffee lasts.
+          </p>
+        </div>
+        <div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Terms</div>
+          <h3 class="font-display text-xl font-semibold leading-tight">
+            No sales calls. No contracts. Cancel anytime.
+          </h3>
+          <p class="mt-2 text-text-muted text-[15px] leading-relaxed max-w-prose">
+          It&rsquo;s a subscription, not a consulting engagement. If the first month is not
+            useful, you can cancel. That&rsquo;s the deal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- ============================================================
+       FINAL CTA
+       ============================================================ -->
+  <section class="relative overflow-hidden">
+    <div class="container-site py-24 md:py-32">
+      <div class="relative rounded-2xl border border-white/8 bg-gradient-to-br from-ink-800 to-ink-900 p-10 md:p-16 overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-brand-cyan/10 blur-3xl"></div>
+        <div class="relative max-w-2xl">
+          <p class="section-label mb-4">Get on the list</p>
+          <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+            Know your market before your market meeting.
+          </h2>
+          <p class="mt-5 text-text-muted text-[17px] leading-relaxed">
+            Drop your email, city, and business type. We&rsquo;ll tell you when we launch in your area.
+            That&rsquo;s it &mdash; no pitch, no upsell, no monthly newsletter.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="/signup" class="btn-primary">
+              Join the waitlist
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="/product" class="btn-secondary">
+              How it works →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
