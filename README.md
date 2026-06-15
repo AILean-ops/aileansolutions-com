@@ -1,6 +1,6 @@
 # aileansolutions.com
 
-Parent-company site for **AI Lean Solutions LLC**. The public architecture is intentionally narrow:
+Parent-company site for **AI Lean Solutions LLC**. The public site is intentionally narrow:
 
 - `https://aipromotionguy.com/` for practical AI education and first wins.
 - `https://usefulopsai.com/` for small-business workflow repair.
@@ -19,7 +19,7 @@ Requires Node.js 20 or newer.
 
 ## Public Routes
 
-- `/` - parent-company doorway to the two active sites.
+- `/` - parent-company page linking to the two active sites.
 - `/legal/privacy` - parent-company privacy policy.
 - `/legal/terms` - parent-company terms of use.
 - `/report-feedback` - hidden operational utility retained for already-scheduled market-intelligence report ticklers.
