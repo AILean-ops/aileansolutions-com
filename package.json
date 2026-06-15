@@ -2,7 +2,7 @@
   "name": "aileansolutions-site",
   "type": "module",
   "version": "1.0.0",
-  "description": "Marketing site for AI Lean Solutions LLC — competitive intelligence for local service businesses.",
+  "description": "Parent-company site for AI Lean Solutions LLC, pointing to AI Promotion Guy and UsefulOps AI.",
   "private": true,
   "scripts": {
     "dev": "astro dev",

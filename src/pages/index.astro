@@ -2,40 +2,24 @@
 import Base from '../layouts/Base.astro';
 import Section from '../components/Section.astro';
 
-const description = 'AI Lean Solutions LLC builds practical AI initiatives for small businesses, working professionals, and local service operators.';
+const description = 'AI Lean Solutions LLC is the parent company behind AI Promotion Guy and UsefulOps AI: practical AI education and workflow repair for everyday people and Main Street businesses.';
 
 const initiatives = [
   {
     label: 'Public AI adoption',
     title: 'AI Promotion Guy',
-    href: '/ai-promotion-guy',
+    href: 'https://aipromotionguy.com/',
     accent: 'promotion',
-    summary: 'Practical, positive AI education for everyday Americans and Main Street business owners.',
-    proof: 'First useful wins before fear, hype, or jargon gets in the way.',
+    summary: 'Plain-English AI help for everyday people and Main Street businesses.',
+    proof: 'Use this door when someone needs confidence, examples, and a first useful AI win.',
   },
   {
     label: 'Workflow improvement',
     title: 'UsefulOps AI',
-    href: '/usefulops-ai',
+    href: 'https://usefulopsai.com/',
     accent: 'usefulops',
-    summary: 'Rowan Vale&rsquo;s autonomous AI-operated consulting business for owner-led teams.',
-    proof: 'Less admin drag, clearer handoffs, better follow-up, and workflows people can actually use.',
-  },
-  {
-    label: 'Market intelligence',
-    title: 'Competitive Intelligence',
-    href: '/market-intelligence',
-    accent: 'market',
-    summary: 'Weekly plain-language reports tracking the local competitors pulling from your customer pool.',
-    proof: 'Currently live for Phoenix med spas, with more markets added carefully.',
-  },
-  {
-    label: 'Field technician support',
-    title: 'Expert Technician',
-    href: '/expert-technician',
-    accent: 'technician',
-    summary: '24/7 AI-assisted technical and troubleshooting support for field technicians.',
-    proof: 'Currently piloting for US-based HVAC technicians and service companies.',
+    summary: 'Workflow repair for owner-led teams that are tired of repeat work slipping through the cracks.',
+    proof: 'Use this door when a business has a slow, confusing, repetitive, or missed process to fix.',
   },
 ];
 ---
@@ -49,22 +33,22 @@ const initiatives = [
       <div class="max-w-4xl">
         <p class="section-label mb-6">// AI Lean Solutions LLC</p>
         <h1 class="font-display font-bold tracking-tightest text-[clamp(2.4rem,7vw,5.8rem)] leading-[0.98] text-white">
-          Practical AI initiatives for the businesses, workers, and communities ready to move.
+          Two practical AI doors. One operating standard.
         </h1>
         <p class="mt-8 max-w-2xl text-[18px] md:text-[21px] text-text-muted leading-relaxed">
-          AI Lean Solutions builds focused AI-based programs that improve how people learn,
-          work, compete, and get help in the field. Each initiative has its own personality.
-          The operating philosophy is shared: useful first, clear next, human judgment always.
+          AI Lean Solutions is the company behind AI Promotion Guy and UsefulOps AI. One helps
+          regular people and Main Street businesses get comfortable using AI. The other helps
+          small businesses repair real workflows with practical AI-assisted operating help.
         </p>
         <div class="mt-10 flex flex-wrap items-center gap-3">
           <a href="#initiatives" class="btn-primary">
-            Explore initiatives
+            Choose a door
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M6 2v8m-3-3 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
-          <a href="mailto:Brian.Bricker@AILeansolutions.com" class="btn-secondary">
-            Contact Brian
+          <a href="https://aipromotionguy.com/" class="btn-secondary">
+            Start with AI Promotion Guy
           </a>
         </div>
       </div>
@@ -93,23 +77,23 @@ const initiatives = [
   <Section num="01" eyebrow="Current initiatives" id="initiatives">
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
       <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[18ch] leading-[1.05]">
-        Four initiatives. One operating belief.
+        The whole public architecture is now this simple.
       </h2>
       <p class="text-text-muted text-[16px] max-w-md leading-relaxed">
-        AI should help people get something done: a clearer message, a tighter workflow,
-        a sharper market view, or a faster answer when the equipment is down.
+        AI Promotion Guy creates trust and practical first wins. UsefulOps AI turns business
+        pain into a paid workflow repair conversation.
       </p>
     </div>
 
     <div class="grid gap-5 md:grid-cols-2">
       {initiatives.map((item) => (
-        <a href={item.href} class={`initiative-card initiative-card--${item.accent}`}>
+        <a href={item.href} target="_blank" rel="noopener" class={`initiative-card initiative-card--${item.accent}`}>
           <span class="initiative-card__label">{item.label}</span>
           <h3>{item.title}</h3>
           <p set:html={item.summary}></p>
           <div class="initiative-card__proof" set:html={item.proof}></div>
           <span class="initiative-card__link">
-            Learn more
+            Visit site
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -122,28 +106,28 @@ const initiatives = [
   <Section num="02" eyebrow="How we work">
     <div class="grid gap-10 md:grid-cols-[0.9fr_1.2fr] md:items-start">
       <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-        Process improvement with AI in the toolbelt.
+        The strategy in plain English.
       </h2>
       <div class="space-y-8">
         <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">01 · Find the friction</div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">01 · Earn trust first</div>
           <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            The work starts with the actual bottleneck: repeated admin, unclear follow-up,
-            lost market signal, field troubleshooting delays, or people unsure how to use AI safely.
+            AI Promotion Guy is the public front door: practical examples, plain language,
+            and useful wins without jargon, fear, or Silicon Valley fog.
           </p>
         </div>
         <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Build the first useful win</div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Repair real work</div>
           <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            Big transformation talk is cheap. Each initiative is designed around small, practical
-            wins that can be understood, tested, and improved.
+            UsefulOps AI is the business offer: find the process that wastes time, build a
+            small practical fix, and leave behind something the business can actually run.
           </p>
         </div>
         <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Keep humans responsible</div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Keep judgment human</div>
           <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            AI can draft, summarize, route, monitor, and advise. People still own judgment,
-            accountability, customer trust, and final decisions.
+            AI can prepare drafts, checklists, summaries, and operating support. People still
+            own decisions, accountability, customer trust, and final judgment.
           </p>
         </div>
       </div>
@@ -157,19 +141,23 @@ const initiatives = [
         <div class="relative max-w-2xl">
           <p class="section-label mb-4">Contact</p>
           <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-            Interested in one of the initiatives?
+            Looking for the right place to start?
           </h2>
           <p class="mt-5 text-text-muted text-[17px] leading-relaxed">
-            Reach out to Brian Bricker at AI Lean Solutions. The current work spans public AI
-            education, AI-operated workflow consulting, competitive intelligence, and HVAC
-            technician support pilots.
+            If you want personal AI help, examples, or confidence, start with AI Promotion Guy.
+            If you own or run a small business and a workflow is wasting time, go to UsefulOps AI.
           </p>
-          <a href="mailto:Brian.Bricker@AILeansolutions.com" class="btn-primary mt-8">
-            Email Brian
+          <div class="mt-8 flex flex-wrap gap-3">
+          <a href="https://aipromotionguy.com/" class="btn-primary">
+            Visit AI Promotion Guy
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2 4.25 6 7l4-2.75M2.75 3h6.5c.69 0 1.25.56 1.25 1.25v4.5c0 .69-.56 1.25-1.25 1.25h-6.5C2.06 10 1.5 9.44 1.5 8.75v-4.5C1.5 3.56 2.06 3 2.75 3Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
+          <a href="https://usefulopsai.com/" class="btn-secondary">
+            Visit UsefulOps AI
+          </a>
+          </div>
         </div>
       </div>
     </div>
