@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+
+const description = 'About Brian Bricker, founder of AI Lean Solutions LLC.';
+---
+
+<Base title="About Brian" description={description} ogImage="/brand/brian-paris.jpg">
+
+  <section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32 bg-grain">
+    <div class="aurora"></div>
+    <div class="absolute inset-0 bg-grid opacity-50"></div>
+    <div class="container-site relative">
+      <div class="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+        <div class="relative">
+          <div class="absolute -inset-4 bg-brand-cyan/10 blur-3xl"></div>
+          <img
+            src="/brand/brian-paris.jpg"
+            alt="Brian Bricker in Paris"
+            class="relative w-full rounded-2xl border border-white/10 shadow-2xl"
+          />
+        </div>
+
+        <div>
+          <p class="section-label mb-5">// About</p>
+          <h1 class="font-display font-bold tracking-tightest text-[clamp(2.2rem,6vw,5rem)] leading-[0.98] text-white">
+            Brian Bricker
+          </h1>
+          <p class="mt-7 text-[18px] md:text-[21px] text-text-muted leading-relaxed">
+            I started AI Lean Solutions because I believe the best use of AI is not replacing
+            human judgment. It is helping people see their work more clearly, reduce friction,
+            and make better decisions with less wasted effort.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <div class="card p-5">
+              <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Lens</p>
+              <p class="mt-2 font-display text-2xl font-bold">Lean</p>
+            </div>
+            <div class="card p-5">
+              <p class="font-mono text-[11px] uppercase tracking-label text-[#ffd23f]">Work</p>
+              <p class="mt-2 font-display text-2xl font-bold">Process</p>
+            </div>
+            <div class="card p-5">
+              <p class="font-mono text-[11px] uppercase tracking-label text-[#14b8a6]">Tool</p>
+              <p class="mt-2 font-display text-2xl font-bold">AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-site">
+      <div class="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+        <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+          Operations first. Technology second. People always.
+        </h2>
+        <div class="space-y-7 text-[17px] leading-relaxed text-text-muted">
+          <p>
+            My working bias is simple: most problems get easier when the process is visible.
+            Once you can see the work, you can improve the handoffs, remove the avoidable
+            rework, clarify ownership, and decide where technology actually belongs.
+          </p>
+          <p>
+            AI belongs in that conversation, but it should earn its place. Used well, it can
+            help people draft, compare, summarize, research, organize, and think through
+            options. Used poorly, it becomes another noisy tool layered on top of a messy
+            process.
+          </p>
+          <p>
+            AI Lean Solutions is my home for exploring and promoting the practical middle:
+            useful AI adoption, better everyday workflows, and more confidence for people who
+            want technology to help rather than overwhelm them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

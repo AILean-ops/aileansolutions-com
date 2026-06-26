@@ -23,7 +23,7 @@ const {
 
 const siteName = 'AI Lean Solutions';
 const fullTitle = title === 'home'
-  ? `${siteName} — Practical AI initiatives for real-world work`
+  ? `${siteName} — Lean thinking, process improvement, and practical AI`
   : `${title} — ${siteName}`;
 
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
@@ -90,14 +90,6 @@ const ldStack = [orgLd, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd])
     {ldStack.map((ld) => (
       <script type="application/ld+json" set:html={JSON.stringify(ld)} />
     ))}
-
-    <!--
-      Analytics placeholder — Plausible.
-      Uncomment the line below after signing up at plausible.io and configuring
-      the aileansolutions.com domain. No other tracking is used on this site.
-
-      <script defer data-domain="aileansolutions.com" src="https://plausible.io/js/script.js"></script>
-    -->
   </head>
   <body class="min-h-screen flex flex-col">
     <a href="#main" class="skip-link">Skip to content</a>

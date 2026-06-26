@@ -2,7 +2,25 @@
 import Base from '../layouts/Base.astro';
 import Section from '../components/Section.astro';
 
-const description = 'AI Lean Solutions LLC builds and maintains practical AI systems, operating tools, and internal automation support.';
+const description = 'AI Lean Solutions LLC helps people and small businesses think more clearly about work, process improvement, and practical AI adoption.';
+
+const principles = [
+  {
+    label: 'Lean thinking',
+    title: 'Make work visible',
+    copy: 'Before adding tools, clarify the work: what happens, where it waits, what repeats, and what creates value.',
+  },
+  {
+    label: 'Process improvement',
+    title: 'Remove friction',
+    copy: 'Small improvements compound when the process is clear, the handoffs are simple, and the next step is obvious.',
+  },
+  {
+    label: 'Practical AI',
+    title: 'Use AI where it helps',
+    copy: 'AI is most useful when it reduces busywork, improves communication, supports judgment, and helps people move with confidence.',
+  },
+];
 ---
 
 <Base title="home" description={description}>
@@ -11,65 +29,84 @@ const description = 'AI Lean Solutions LLC builds and maintains practical AI sys
     <div class="aurora"></div>
     <div class="absolute inset-0 bg-grid opacity-50"></div>
     <div class="container-site relative">
-      <div class="max-w-4xl">
-        <p class="section-label mb-6">// AI Lean Solutions LLC</p>
-        <h1 class="font-display font-bold tracking-tightest text-[clamp(2.4rem,7vw,5.8rem)] leading-[0.98] text-white">
-          Practical AI for working better.
-        </h1>
-        <p class="mt-8 max-w-2xl text-[18px] md:text-[21px] text-text-muted leading-relaxed">
-          AI Lean Solutions is simplifying its public presence and focusing current support
-          through this company site.
-        </p>
-      </div>
+      <div class="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div>
+          <p class="section-label mb-6">// AI Lean Solutions LLC</p>
+          <h1 class="font-display font-bold tracking-tightest text-[clamp(2.7rem,7vw,6.4rem)] leading-[0.96] text-white max-w-[11ch]">
+            Better work with clearer thinking and practical AI.
+          </h1>
+          <p class="mt-8 max-w-2xl text-[18px] md:text-[21px] text-text-muted leading-relaxed">
+            AI Lean Solutions brings together lean thinking, process improvement, and
+            practical AI education to help everyday people and small businesses make sense of
+            changing technology without losing sight of the human work.
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-3">
+            <a href="/about" class="btn-primary">About Brian</a>
+            <a href="/contact" class="btn-secondary">Contact</a>
+          </div>
+        </div>
 
-      <div class="mt-16 grid gap-4 md:grid-cols-4">
-        <div class="card p-5">
-          <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Built around</p>
-          <p class="mt-2 font-display text-2xl font-bold">AI + operations</p>
-        </div>
-        <div class="card p-5">
-          <p class="font-mono text-[11px] uppercase tracking-label text-[#ffd23f]">Posture</p>
-          <p class="mt-2 font-display text-2xl font-bold">Focused</p>
-        </div>
-        <div class="card p-5">
-          <p class="font-mono text-[11px] uppercase tracking-label text-[#14b8a6]">Standard</p>
-          <p class="mt-2 font-display text-2xl font-bold">Useful</p>
-        </div>
-        <div class="card p-5">
-          <p class="font-mono text-[11px] uppercase tracking-label text-[#f97316]">Focus</p>
-          <p class="mt-2 font-display text-2xl font-bold">Real work</p>
+        <div class="grid gap-4">
+          <div class="card p-6 md:p-7">
+            <p class="section-label mb-4">// Focus</p>
+            <p class="font-display text-3xl md:text-4xl font-bold tracking-tight leading-tight">
+              Helping people understand AI, improve work, and choose better next steps.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="card p-5">
+              <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">Approach</p>
+              <p class="mt-2 font-display text-2xl font-bold">Lean</p>
+            </div>
+            <div class="card p-5">
+              <p class="font-mono text-[11px] uppercase tracking-label text-[#ffd23f]">Standard</p>
+              <p class="mt-2 font-display text-2xl font-bold">Useful</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <Section num="01" eyebrow="Current focus">
-    <div class="grid gap-10 md:grid-cols-[0.9fr_1.2fr] md:items-start">
-      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-        One supported public site.
+  <Section num="01" eyebrow="Operating Philosophy">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[16ch] leading-[1.05]">
+        Technology works best when the work is understood first.
       </h2>
-      <div class="space-y-8">
-        <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">01 · Plain language</div>
-          <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            The work should be understandable to regular people, not just technologists,
-            consultants, or people already living inside AI tools.
-          </p>
-        </div>
-        <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Useful systems</div>
-          <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            AI is valuable when it helps someone write, understand, organize, decide, follow up,
-            or run a process with less wasted effort.
-          </p>
-        </div>
-        <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Human judgment</div>
-          <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
-            AI can prepare drafts, checklists, summaries, and operating support. People still
-            own decisions, accountability, customer relationships, and final judgment.
-          </p>
-        </div>
+      <p class="text-text-muted text-[16px] max-w-md leading-relaxed">
+        The center of gravity is not hype. It is useful work: fewer delays, cleaner
+        communication, better decisions, and more confidence for the people doing the work.
+      </p>
+    </div>
+
+    <div class="grid gap-5 md:grid-cols-3">
+      {principles.map((item) => (
+        <article class="card p-7 md:p-8">
+          <p class="font-mono text-[11px] uppercase tracking-label text-brand-cyan">{item.label}</p>
+          <h3 class="mt-5 font-display text-3xl font-bold tracking-tight leading-none">{item.title}</h3>
+          <p class="mt-5 text-text-muted text-[16px] leading-relaxed">{item.copy}</p>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <Section num="02" eyebrow="Why It Matters">
+    <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
+        AI should feel practical, understandable, and grounded in real life.
+      </h2>
+      <div class="space-y-7 text-[17px] leading-relaxed text-text-muted">
+        <p>
+          For most people and small businesses, AI adoption will not be a grand transformation
+          project. It will be a hundred small moments: writing something clearer, finding the
+          right question, organizing a messy process, preparing a better first draft, or seeing
+          a workflow from a different angle.
+        </p>
+        <p>
+          AI Lean Solutions exists to promote that kind of practical adoption: optimistic
+          without being naive, process-minded without being stiff, and focused on helping
+          normal people get real benefit from new tools.
+        </p>
       </div>
     </div>
   </Section>
@@ -81,12 +118,15 @@ const description = 'AI Lean Solutions LLC builds and maintains practical AI sys
         <div class="relative max-w-2xl">
           <p class="section-label mb-4">Contact</p>
           <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-            Current support runs through AI Lean Solutions.
+            A simple place to start.
           </h2>
           <p class="mt-5 text-text-muted text-[17px] leading-relaxed">
-            Retired project sites have been parked. For current AI Lean Solutions work, use
-            this site as the public source of truth.
+            If something here connects with a problem you are thinking through, send a note.
+            The public site stays intentionally broad; the conversation can get specific.
           </p>
+          <div class="mt-8">
+            <a href="/contact" class="btn-primary">Send a note</a>
+          </div>
         </div>
       </div>
     </div>
