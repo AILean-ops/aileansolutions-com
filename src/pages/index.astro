@@ -2,26 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Section from '../components/Section.astro';
 
-const description = 'AI Lean Solutions LLC is the parent company behind AI Promotion Guy and UsefulOps AI: practical AI education and workflow repair for everyday people and Main Street businesses.';
-
-const initiatives = [
-  {
-    label: 'Public AI adoption',
-    title: 'AI Promotion Guy',
-    href: 'https://aipromotionguy.com/',
-    accent: 'promotion',
-    summary: 'Plain-English AI help for everyday people and Main Street businesses.',
-    proof: 'Practical examples, simple explanations, and useful ways to make AI less confusing.',
-  },
-  {
-    label: 'Workflow improvement',
-    title: 'UsefulOps AI',
-    href: 'https://usefulopsai.com/',
-    accent: 'usefulops',
-    summary: 'Workflow repair for owner-led teams that are tired of repeat work slipping through the cracks.',
-    proof: 'Focused help for slow, confusing, repetitive, or missed processes inside a real business.',
-  },
-];
+const description = 'AI Lean Solutions LLC builds and maintains practical AI systems, operating tools, and internal automation support.';
 ---
 
 <Base title="home" description={description}>
@@ -33,24 +14,12 @@ const initiatives = [
       <div class="max-w-4xl">
         <p class="section-label mb-6">// AI Lean Solutions LLC</p>
         <h1 class="font-display font-bold tracking-tightest text-[clamp(2.4rem,7vw,5.8rem)] leading-[0.98] text-white">
-          Practical AI for learning and working better.
+          Practical AI for working better.
         </h1>
         <p class="mt-8 max-w-2xl text-[18px] md:text-[21px] text-text-muted leading-relaxed">
-          AI Lean Solutions is the company behind AI Promotion Guy and UsefulOps AI. One helps
-          regular people and Main Street businesses get comfortable using AI. The other helps
-          small businesses repair real workflows with practical AI-assisted operating help.
+          AI Lean Solutions is simplifying its public presence and focusing current support
+          through this company site.
         </p>
-        <div class="mt-10 flex flex-wrap items-center gap-3">
-          <a href="#initiatives" class="btn-primary">
-            Explore the work
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M6 2v8m-3-3 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="https://aipromotionguy.com/" class="btn-secondary">
-            Visit AI Promotion Guy
-          </a>
-        </div>
       </div>
 
       <div class="mt-16 grid gap-4 md:grid-cols-4">
@@ -60,7 +29,7 @@ const initiatives = [
         </div>
         <div class="card p-5">
           <p class="font-mono text-[11px] uppercase tracking-label text-[#ffd23f]">Posture</p>
-          <p class="mt-2 font-display text-2xl font-bold">Optimistic</p>
+          <p class="mt-2 font-display text-2xl font-bold">Focused</p>
         </div>
         <div class="card p-5">
           <p class="font-mono text-[11px] uppercase tracking-label text-[#14b8a6]">Standard</p>
@@ -74,39 +43,10 @@ const initiatives = [
     </div>
   </section>
 
-  <Section num="01" eyebrow="Current initiatives" id="initiatives">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-      <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl max-w-[18ch] leading-[1.05]">
-        Two focused sites. One practical standard.
-      </h2>
-      <p class="text-text-muted text-[16px] max-w-md leading-relaxed">
-        AI Promotion Guy helps people understand and use AI in everyday life. UsefulOps AI
-        helps small businesses repair workflows that waste time.
-      </p>
-    </div>
-
-    <div class="grid gap-5 md:grid-cols-2">
-      {initiatives.map((item) => (
-        <a href={item.href} target="_blank" rel="noopener" class={`initiative-card initiative-card--${item.accent}`}>
-          <span class="initiative-card__label">{item.label}</span>
-          <h3>{item.title}</h3>
-          <p set:html={item.summary}></p>
-          <div class="initiative-card__proof" set:html={item.proof}></div>
-          <span class="initiative-card__link">
-            Visit site
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-      ))}
-    </div>
-  </Section>
-
-  <Section num="02" eyebrow="How we work">
+  <Section num="01" eyebrow="Current focus">
     <div class="grid gap-10 md:grid-cols-[0.9fr_1.2fr] md:items-start">
       <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-        What ties the work together.
+        One supported public site.
       </h2>
       <div class="space-y-8">
         <div>
@@ -117,14 +57,14 @@ const initiatives = [
           </p>
         </div>
         <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Useful work</div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">02 · Useful systems</div>
           <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
             AI is valuable when it helps someone write, understand, organize, decide, follow up,
             or run a process with less wasted effort.
           </p>
         </div>
         <div>
-          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Keep judgment human</div>
+          <div class="font-mono text-[11px] uppercase tracking-label text-brand-cyan mb-3">03 · Human judgment</div>
           <p class="text-text-muted text-[16px] leading-relaxed max-w-prose">
             AI can prepare drafts, checklists, summaries, and operating support. People still
             own decisions, accountability, customer relationships, and final judgment.
@@ -141,23 +81,12 @@ const initiatives = [
         <div class="relative max-w-2xl">
           <p class="section-label mb-4">Contact</p>
           <h2 class="font-display font-bold tracking-tightest text-4xl md:text-5xl leading-[1.05]">
-            Two places to start.
+            Current support runs through AI Lean Solutions.
           </h2>
           <p class="mt-5 text-text-muted text-[17px] leading-relaxed">
-            Visit AI Promotion Guy for plain-English AI education and examples. Visit UsefulOps
-            AI for small-business workflow repair.
+            Retired project sites have been parked. For current AI Lean Solutions work, use
+            this site as the public source of truth.
           </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-          <a href="https://aipromotionguy.com/" class="btn-primary">
-            Visit AI Promotion Guy
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2 6h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="https://usefulopsai.com/" class="btn-secondary">
-            Visit UsefulOps AI
-          </a>
-          </div>
         </div>
       </div>
     </div>
